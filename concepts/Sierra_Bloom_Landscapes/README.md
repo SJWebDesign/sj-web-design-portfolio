@@ -1,17 +1,26 @@
 # Sierra Bloom Landscapes
 
-Responsive single-page starter website created for the S&J Web Design portfolio.
+A responsive, interactive S&J Web Design portfolio concept with a bespoke art direction.
+
+## Design direction
+
+- Style: Botanical landscapes
+- Typography: Georgia, "Times New Roman", serif
+- Palette: #263d2a, #b9a7ff, #ff9f80
+- Hero photography: Unsplash, loaded responsively from the concept page
+
+## Interaction
+
+- Responsive navigation for desktop and mobile
+- Interactive mood shift
+- Expandable design notes
+- Keyboard-accessible links and controls
+- Reduced-motion support
 
 ## Files
-- `index.html` — complete HTML, CSS, and JavaScript in one file.
 
-## Before publishing
-1. Replace placeholder copy and project-image area.
-2. Add the real phone number, email, address, and service area.
-3. Connect the contact form to a real form service.
-4. Test every link and form on mobile and desktop.
-5. Add privacy, accessibility, and legal information appropriate to the business.
+- `index.html` — complete HTML, CSS, and JavaScript in one file
 
-## Brand colors
-- Primary: `#123A63`
-- Accent: `#F4C430`
+## Before publishing for a real client
+
+Replace concept copy and photography with approved business content, connect live booking or contact services, and add business-specific privacy, accessibility, and legal information.
