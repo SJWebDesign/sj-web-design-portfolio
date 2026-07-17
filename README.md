@@ -32,10 +32,4 @@ The site includes:
 
 A branded social sharing image can be added later with og:image and twitter:image.
 
-## Preview
 
-Open index.html in a web browser. No installation or build step is required.
-
-## Before publishing
-
-Confirm the contact email in index.html. The current link uses hello@sjwebdesign.com.
