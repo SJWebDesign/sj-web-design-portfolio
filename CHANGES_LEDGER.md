@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.10.0-mini-shell-demo`
+Current version: `v0.10.1-changes-ledger`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,15 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.10.1-changes-ledger - 2026-07-17
+
+- Commit: ledger publication commit
+- Summary: Added the S&J website changes ledger and standing update prompt.
+- Changed: Created `CHANGES_LEDGER.md` and a public `changes-ledger.html` version for browser access.
+- Files changed: `CHANGES_LEDGER.md`, `changes-ledger.html`
+- Deployment: Ready to push to `main`.
+- Notes: Future S&J website changes must update this ledger before final delivery.
 
 ### v0.10.0-mini-shell-demo - 2026-07-17
 

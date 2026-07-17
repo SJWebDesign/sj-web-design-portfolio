@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>S&amp;J Website Changes Ledger</title>
+  <meta name="description" content="Versioned changes ledger for the S&amp;J website.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .ledger-page {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 3rem 1rem 5rem;
+    }
+
+    .ledger-page h1 {
+      font-size: clamp(2.4rem, 7vw, 4.8rem);
+    }
+
+    .ledger-entry {
+      padding: 1.5rem 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .ledger-entry h2 {
+      margin-bottom: 0.75rem;
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+    }
+
+    .ledger-entry ul {
+      margin: 0;
+      padding-left: 1.2rem;
+      color: var(--muted);
+    }
+
+    .prompt-box {
+      margin: 2rem 0;
+      padding: 1.2rem;
+      color: var(--white);
+      background: var(--navy);
+      border-radius: 8px;
+    }
+
+    .prompt-box code {
+      color: var(--yellow);
+      white-space: normal;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="S and J Digital Agency OS home">
+      <span class="brand-mark">S&amp;J</span>
+      <span>Changes Ledger</span>
+    </a>
+    <nav class="nav" aria-label="Ledger navigation">
+      <a href="index.html">Home</a>
+      <a href="#history">History</a>
+    </nav>
+  </header>
+
+  <main class="ledger-page">
+    <p class="eyebrow">Current version</p>
+    <h1>v0.10.1-changes-ledger</h1>
+    <p>Production domain: <a href="https://sjwebdesignca.com/">sjwebdesignca.com</a>. This page records meaningful S&amp;J website changes and should be updated every time the site changes.</p>
+
+    <section class="prompt-box" aria-label="Standing update prompt">
+      <h2>Standing update prompt</h2>
+      <p><code>Update the S&amp;J website changes ledger before final delivery. Include the new version number, date, summary, files changed, deployment status, live verification notes if deployed, and follow-up work or risks.</code></p>
+    </section>
+
+    <section id="history">
+      <article class="ledger-entry">
+        <h2>v0.10.1-changes-ledger - 2026-07-17</h2>
+        <ul>
+          <li>Added the S&amp;J website changes ledger and standing update prompt.</li>
+          <li>Created `CHANGES_LEDGER.md` and this public browser page.</li>
+          <li>Future S&amp;J website changes must update the ledger before final delivery.</li>
+        </ul>
+      </article>
+
+      <article class="ledger-entry">
+        <h2>v0.10.0-mini-shell-demo - 2026-07-17</h2>
+        <ul>
+          <li>Deployed the SJDOS-MINI-DRAFT-FAST-WEB shell demo to production.</li>
+          <li>Replaced the homepage with a smaller static one-page demo and added `style.css`.</li>
+          <li>Live checks confirmed the homepage and stylesheet returned `200`.</li>
+        </ul>
+      </article>
+
+      <article class="ledger-entry">
+        <h2>v0.9.0 through v0.1.0 - 2026-07-16 to 2026-07-17</h2>
+        <ul>
+          <li>Added collaboration options, expanded services, pricing value proposition content, concept previews, concept redesigns, desktop polish, mobile improvements, contact details, and initial portfolio structure.</li>
+          <li>Detailed commit mapping is preserved in `CHANGES_LEDGER.md` in the repository.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
