@@ -30,11 +30,11 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 
 ### v0.11.1-ledger-repo-only - 2026-07-17
 
-- Commit: pending at time of writing
+- Commit: `c181150`
 - Summary: Removed the changes ledger from the public website UI while keeping the repo ledger active.
 - Changed: Removed the footer link to the changes ledger and removed the public `changes-ledger.html` page from the current site files.
 - Files changed: `index.html`, `changes-ledger.html`, `CHANGES_LEDGER.md`
-- Deployment: Pending push to `main`.
+- Deployment: Pushed to `main`; live homepage verified with no ledger link and public ledger page verified as removed.
 - Notes: Continue logging future website changes in `CHANGES_LEDGER.md`, but do not surface the ledger in the website UI.
 
 ### v0.11.0-personal-pricing-chart - 2026-07-17
