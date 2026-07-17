@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.10.3-brand-pricing-copy`
+Current version: `v0.11.0-personal-pricing-chart`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -28,31 +28,40 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 
 ## Version History
 
+### v0.11.0-personal-pricing-chart - 2026-07-17
+
+- Commit: release commit
+- Summary: Added personally built website messaging, dropdown pricing, and a price comparison sheet.
+- Changed: Stated that S&J builds the websites directly, added pricing from $49.99/month to $99.99/month based on page count, added dropdown pricing tiers, added a comparison table, and made clear that every plan includes page update features.
+- Files changed: `index.html`, `style.css`, `changes-ledger.html`, `CHANGES_LEDGER.md`
+- Deployment: Pending push to `main`.
+- Notes: Requested by the user as part of completing the website pricing presentation.
+
 ### v0.10.3-brand-pricing-copy - 2026-07-17
 
-- Commit: pending at time of writing
+- Commit: `ca6a5c6`
 - Summary: Updated homepage branding, owner names, and pricing-first hero copy.
 - Changed: Replaced S&J Digital Agency OS with S&J Web Design, replaced the demo marker with Samantha A. Nielsen and James C. Garrett, and rewrote the hero headline around professional websites starting at $49.99/month.
 - Files changed: `index.html`, `changes-ledger.html`, `CHANGES_LEDGER.md`
-- Deployment: Pending push to `main`.
+- Deployment: Pushed to `main`; live domain verified.
 - Notes: Requested by the user as part of completing the website copy.
 
 ### v0.10.2-ledger-link - 2026-07-17
 
-- Commit: pending at time of writing
+- Commit: `d0a66e9`
 - Summary: Added a homepage footer link to the public changes ledger.
 - Changed: Linked `index.html` to `changes-ledger.html` and updated the current ledger version.
 - Files changed: `index.html`, `CHANGES_LEDGER.md`
-- Deployment: Pending push to `main`.
+- Deployment: Pushed to `main`; live homepage link verified.
 - Notes: This makes the ledger discoverable from the live site footer.
 
 ### v0.10.1-changes-ledger - 2026-07-17
 
-- Commit: ledger publication commit
+- Commit: `9098df2`
 - Summary: Added the S&J website changes ledger and standing update prompt.
 - Changed: Created `CHANGES_LEDGER.md` and a public `changes-ledger.html` version for browser access.
 - Files changed: `CHANGES_LEDGER.md`, `changes-ledger.html`
-- Deployment: Ready to push to `main`.
+- Deployment: Pushed to `main`; public ledger page verified.
 - Notes: Future S&J website changes must update this ledger before final delivery.
 
 ### v0.10.0-mini-shell-demo - 2026-07-17

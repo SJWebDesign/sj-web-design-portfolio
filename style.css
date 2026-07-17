@@ -186,6 +186,12 @@ h2 {
   border-top: 1px solid var(--line);
 }
 
+.section-intro {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -225,6 +231,110 @@ h2 {
   display: grid;
   grid-template-columns: 0.8fr 1fr;
   gap: 2rem;
+}
+
+.pricing-list {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+
+.price-tier {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.price-tier summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 64px;
+  padding: 1rem 1.2rem;
+  color: var(--navy);
+  cursor: pointer;
+  font-weight: 800;
+  list-style: none;
+}
+
+.price-tier summary::-webkit-details-marker {
+  display: none;
+}
+
+.price-tier summary::after {
+  content: "+";
+  display: grid;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 auto;
+  place-items: center;
+  color: var(--navy);
+  background: var(--yellow);
+  border-radius: 8px;
+}
+
+.price-tier[open] summary::after {
+  content: "-";
+}
+
+.price-tier strong {
+  color: var(--blue);
+  white-space: nowrap;
+}
+
+.price-tier ul {
+  margin: 0;
+  padding: 0 1.2rem 1.2rem 2.35rem;
+  color: var(--muted);
+}
+
+.comparison-wrap {
+  margin-top: 2rem;
+  overflow-x: auto;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.comparison-table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+}
+
+.comparison-table caption {
+  padding: 1rem;
+  color: var(--navy);
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-align: left;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 0.95rem 1rem;
+  border-top: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.comparison-table thead th {
+  color: var(--navy);
+  background: #f6f8fc;
+}
+
+.comparison-table tbody th {
+  color: var(--navy);
+}
+
+.comparison-table td {
+  color: var(--muted);
+}
+
+.comparison-table td:nth-child(2) {
+  color: var(--blue);
+  font-weight: 800;
 }
 
 .contact {
@@ -267,7 +377,8 @@ h2 {
 
   .nav {
     width: 100%;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .hero,
@@ -287,5 +398,21 @@ h2 {
 
   .button {
     width: 100%;
+  }
+
+  .price-tier summary {
+    align-items: flex-start;
+    flex-direction: column;
+    padding-right: 3.75rem;
+  }
+
+  .price-tier summary::after {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .price-tier {
+    position: relative;
   }
 }
