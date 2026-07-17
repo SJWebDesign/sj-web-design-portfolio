@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.11.1-ledger-repo-only`
+Current version: `v0.11.2-footer-copyright`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,15 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.11.2-footer-copyright - 2026-07-17
+
+- Commit: pending at time of writing
+- Summary: Updated the footer copyright line.
+- Changed: Removed pricing copy from the bottom footer and replaced it with `© 2026 S&J Tech Services LLC. All rights reserved.`
+- Files changed: `index.html`, `CHANGES_LEDGER.md`
+- Deployment: Pending push to `main`.
+- Notes: Pricing remains in the main pricing section; only the footer pricing mention was removed.
 
 ### v0.11.1-ledger-repo-only - 2026-07-17
 
