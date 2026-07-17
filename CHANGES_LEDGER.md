@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.11.0-personal-pricing-chart`
+Current version: `v0.11.1-ledger-repo-only`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,15 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.11.1-ledger-repo-only - 2026-07-17
+
+- Commit: pending at time of writing
+- Summary: Removed the changes ledger from the public website UI while keeping the repo ledger active.
+- Changed: Removed the footer link to the changes ledger and removed the public `changes-ledger.html` page from the current site files.
+- Files changed: `index.html`, `changes-ledger.html`, `CHANGES_LEDGER.md`
+- Deployment: Pending push to `main`.
+- Notes: Continue logging future website changes in `CHANGES_LEDGER.md`, but do not surface the ledger in the website UI.
 
 ### v0.11.0-personal-pricing-chart - 2026-07-17
 
