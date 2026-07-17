@@ -105,6 +105,15 @@
     .concepts h2,.concepts .heading>p{color:#fff}.concepts .eyebrow{color:var(--yellow)}
     .concepts .empty{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.35)}
     .concepts .empty h3{color:#fff}.concepts .empty p{color:#c9d7ec}
+    .concept-filters{display:flex;flex-wrap:wrap;gap:.65rem;margin:-.5rem 0 2rem}
+    .concept-filter{min-height:42px;padding:.58rem 1rem;color:#dbe7f8;background:transparent;border:1px solid rgba(255,255,255,.3);border-radius:99px;cursor:pointer;font-weight:800}
+    .concept-filter:hover,.concept-filter[aria-pressed=true]{color:var(--navy);background:var(--yellow);border-color:var(--yellow)}
+    .concept-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem}
+    .concept-card{overflow:hidden;background:#fff;border-radius:24px;box-shadow:0 18px 45px rgba(0,0,0,.18);transition:transform .2s,box-shadow .2s}.concept-card:hover{transform:translateY(-4px);box-shadow:0 24px 55px rgba(0,0,0,.26)}.concept-card[hidden]{display:none}
+    .concept-preview{position:relative;height:260px;overflow:hidden;background:#e8eef7;border-bottom:1px solid var(--line)}.concept-preview iframe{width:1440px;height:900px;border:0;pointer-events:none;transform:scale(.4);transform-origin:top left}.concept-preview::after{position:absolute;inset:0;content:"";background:linear-gradient(180deg,transparent 65%,rgba(6,31,74,.12));pointer-events:none}
+    .concept-body{padding:1.4rem}.concept-type{margin:0 0 .35rem;color:var(--blue-dark);font-size:.72rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.concept-body h3{margin-bottom:.45rem;color:var(--navy);font-size:1.35rem;line-height:1.2}.concept-body>p:not(.concept-type){min-height:3.2em;margin-bottom:1.2rem;color:var(--muted)}
+    .concept-actions{display:flex;flex-wrap:wrap;gap:.7rem}.concept-actions .button{min-height:42px;padding:.58rem 1rem;font-size:.88rem;cursor:pointer}.concept-actions .secondary{box-shadow:none}
+    .concept-dialog{width:min(1120px,calc(100% - 1.5rem));height:min(820px,calc(100% - 1.5rem));padding:0;overflow:hidden;background:#fff;border:2px solid var(--navy);border-radius:24px;box-shadow:0 30px 100px rgba(0,0,0,.45)}.concept-dialog::backdrop{background:rgba(3,15,37,.84);backdrop-filter:blur(6px)}.dialog-bar{display:flex;min-height:62px;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 1rem;background:var(--navy)}.dialog-bar strong{color:#fff}.dialog-close{display:grid;width:42px;height:42px;place-items:center;color:var(--navy);background:var(--yellow);border:0;border-radius:50%;cursor:pointer;font-size:1.3rem;font-weight:900}.concept-dialog iframe{display:block;width:100%;height:calc(100% - 62px);border:0}
     .contact{position:relative;overflow:hidden;padding:clamp(2.5rem,7vw,5rem);color:#fff;background:var(--blue);border:2px solid var(--navy);border-radius:34px 34px 34px 10px;box-shadow:14px 14px 0 var(--yellow)}
     .contact::after{position:absolute;top:-100px;right:-80px;width:300px;height:300px;background:var(--yellow);border:34px solid rgba(255,255,255,.25);border-radius:50%;content:""}
     .contact>*{position:relative;z-index:1}.contact h2{margin-bottom:1rem;color:#fff}.contact>p:not(.eyebrow){max-width:580px;margin-bottom:2rem;color:#edf4ff;font-size:1.1rem}
@@ -119,7 +128,7 @@
       .links{position:absolute;top:100%;right:0;left:0;display:none;align-items:stretch;padding:1rem;background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow);flex-direction:column;gap:.35rem}
       .links.open{display:flex}.links a:not(.nav-cta){min-height:48px;padding:.8rem .5rem}
       .hero-grid,.heading,.about-grid{grid-template-columns:1fr}.art{width:min(100%,500px);min-height:390px;margin-inline:auto}
-      .services{grid-template-columns:1fr}.service{display:grid;grid-template-columns:auto 1fr;column-gap:1rem}.number{grid-row:span 2;margin-bottom:0}
+      .services,.concept-grid{grid-template-columns:1fr}.service{display:grid;grid-template-columns:auto 1fr;column-gap:1rem}.number{grid-row:span 2;margin-bottom:0}.concept-preview iframe{transform:scale(.36)}
     }
     @media(max-width:520px){
       .container{width:min(calc(100% - 1.35rem),var(--width))}.nav{min-height:68px}.brand>span:last-child{font-size:.94rem}
@@ -183,10 +192,11 @@
     </section>
     <section class="section concepts" id="concepts">
       <div class="container">
-        <div class="heading"><div><p class="eyebrow">Creative playground</p><h2>Concepts.</h2></div><p>A future home for design explorations, experiments, and ideas made just for fun.</p></div>
-        <div class="empty"><div><div class="empty-icon" aria-hidden="true">✦</div><h3>Concepts coming soon</h3><p>This collection is intentionally open and ready for future additions.</p></div></div>
-      </div>
+        <div class="heading"><div><p class="eyebrow">Creative playground</p><h2>Concepts.</h2></div><p>Ten responsive website directions for restaurants, local makers, and home-service businesses. Filter the collection, then open any concept to explore it live.</p></div>
+        <div class="concept-filters" role="group" aria-label="Filter website concepts"><button class="concept-filter" type="button" data-filter="all" aria-pressed="true">All concepts</button><button class="concept-filter" type="button" data-filter="food" aria-pressed="false">Food &amp; drink</button><button class="concept-filter" type="button" data-filter="home" aria-pressed="false">Home services</button><button class="concept-filter" type="button" data-filter="style" aria-pressed="false">Personal style</button></div>
+        <div class="concept-grid" id="concept-grid"></div></div>
     </section>
+    <dialog class="concept-dialog" id="concept-dialog" aria-labelledby="concept-dialog-title"><div class="dialog-bar"><strong id="concept-dialog-title">Website concept</strong><button class="dialog-close" type="button" aria-label="Close concept preview">×</button></div><iframe title="Interactive website concept" src="about:blank"></iframe></dialog>
     <section class="section" id="contact">
       <div class="container"><div class="contact"><p class="eyebrow">Start a conversation</p><h2>Have a project in mind?</h2><p>Tell us what you're building, refreshing, or dreaming up. We'd love to hear about it.</p><a class="button" href="mailto:hello@sjwebdesign.com">Email S&amp;J <span aria-hidden="true">→</span></a></div></div>
     </section>
@@ -196,6 +206,26 @@
     const button=document.querySelector('.menu'),nav=document.querySelector('.links');
     button.addEventListener('click',()=>{const open=button.getAttribute('aria-expanded')==='true';button.setAttribute('aria-expanded',String(!open));button.setAttribute('aria-label',open?'Open navigation menu':'Close navigation menu');nav.classList.toggle('open')});
     nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');button.setAttribute('aria-expanded','false');button.setAttribute('aria-label','Open navigation menu')}));
+    const concepts=[
+      ['Sierra Bloom Landscapes','Sierra_Bloom_Landscapes','home','Landscaping · Home services','A polished landscape-design direction built around transformation stories and consultation calls.'],
+      ['FreshCut Lawn Care','FreshCut_Lawn_Care','home','Lawn care · Home services','A friendly, conversion-focused lawn-care site with simple service choices and local credibility.'],
+      ['Golden State Outdoor Living','Golden_State_Outdoor_Living','home','Outdoor construction · Home services','A premium outdoor-living concept shaped for high-value project showcases and lead generation.'],
+      ['Ember House Grill','Ember_House_Grill','food','Restaurant · Food & drink','A warm, confident restaurant concept that puts signature dishes and reservations up front.'],
+      ['Casa Sol Cocina','Casa_Sol_Cocina','food','Restaurant · Food & drink','A colorful mobile-first restaurant direction designed for fast browsing and online ordering.'],
+      ['Nonna Rosa Kitchen','Nonna_Rosa_Kitchen','food','Restaurant · Food & drink','A welcoming neighborhood-kitchen concept centered on story, comfort, and memorable meals.'],
+      ['Harbor Coffee Co.','Harbor_Coffee_Co','food','Coffee shop · Food & drink','A clean café concept with strong mobile calls to action and a relaxed coastal personality.'],
+      ['Honeycomb Bakery Café','Honeycomb_Bakery_Cafe','food','Bakery · Food & drink','A cheerful bakery concept made to spotlight products, seasonal features, and daily visits.'],
+      ['Precision Plumbing Co.','Precision_Plumbing_Co','home','Plumbing · Home services','A trustworthy service-business direction with clear emergency help and estimate pathways.'],
+      ['Northside Barber Studio','Northside_Barber_Studio','style','Barber studio · Personal style','A sharp appointment-led concept balancing neighborhood character with a refined visual system.']
+    ];
+    const grid=document.getElementById('concept-grid');
+    grid.innerHTML=concepts.map(([name,slug,category,type,copy])=>`<article class="concept-card" data-category="${category}"><div class="concept-preview"><iframe loading="lazy" tabindex="-1" title="${name} visual preview" src="concepts/${slug}/index.html"></iframe></div><div class="concept-body"><p class="concept-type">${type}</p><h3>${name}</h3><p>${copy}</p><div class="concept-actions"><button class="button primary concept-open" type="button" data-src="concepts/${slug}/index.html" data-title="${name}">Explore live <span aria-hidden="true">→</span></button><a class="button secondary" href="concepts/${slug}/index.html" target="_blank" rel="noopener">New tab</a></div></div></article>`).join('');
+    const filters=document.querySelectorAll('.concept-filter'),cards=document.querySelectorAll('.concept-card');
+    filters.forEach(filter=>filter.addEventListener('click',()=>{filters.forEach(item=>item.setAttribute('aria-pressed','false'));filter.setAttribute('aria-pressed','true');cards.forEach(card=>{card.hidden=filter.dataset.filter!=='all'&&card.dataset.category!==filter.dataset.filter})}));
+    const dialog=document.getElementById('concept-dialog'),dialogFrame=dialog.querySelector('iframe'),dialogTitle=document.getElementById('concept-dialog-title');
+    document.querySelectorAll('.concept-open').forEach(open=>open.addEventListener('click',()=>{dialogTitle.textContent=open.dataset.title;dialogFrame.src=open.dataset.src;dialog.showModal()}));
+    const closeDialog=()=>{dialog.close();dialogFrame.src='about:blank'};
+    dialog.querySelector('.dialog-close').addEventListener('click',closeDialog);dialog.addEventListener('click',event=>{if(event.target===dialog)closeDialog()});
     document.getElementById('year').textContent=new Date().getFullYear();
   </script>
 </body>

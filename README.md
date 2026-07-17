@@ -16,7 +16,7 @@ The palette is defined with CSS custom properties at the top of index.html.
 
 ## Portfolio sections
 
-The Projects and Concepts sections are intentionally left open for future case studies and design explorations.
+The Projects section is ready for future case studies. The Concepts section features ten responsive, self-contained website explorations with live previews, category filters, and interactive full-page demos.
 
 ## SEO
 
