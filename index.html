@@ -2,269 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Professional Small Business Websites from $49.99/month | S&amp;J</title>
-  <meta name="description" content="Professional, mobile-first websites for small businesses starting at $49.99/month, including hosting, unlimited updates, support, and redesigns.">
-  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>S&amp;J Digital Agency OS | Simple Website Demo</title>
+  <meta name="description" content="A fast, one-page shell demo for S&amp;J Digital Agency Operating System services, strategy, and contact information.">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://sjwebdesignca.com/">
-  <meta name="author" content="S&amp;J Web Design">
   <meta name="theme-color" content="#0f52ba">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="S&amp;J Web Design">
-  <meta property="og:url" content="https://sjwebdesignca.com/">
-  <meta property="og:title" content="Professional Small Business Websites from $49.99/month">
-  <meta property="og:description" content="Everything included: hosting, unlimited updates, support, and redesigns for $49.99/month.">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Professional Small Business Websites from $49.99/month">
-  <meta name="twitter:description" content="Mobile-first small business websites with hosting, unlimited updates, support, and redesigns for $49.99/month.">
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "S&J Web Design",
-      "url": "https://sjwebdesignca.com/",
-      "description": "Professional mobile-first websites for small businesses starting at $49.99 per month, with hosting, unlimited updates, support, and redesigns included.",
-      "knowsAbout": ["Web design", "Web development", "Responsive design", "Brand direction"]
-    }
-  </script>
-  <style>
-    :root{
-      --blue:#0f52ba;--blue-dark:#093477;--navy:#061f4a;--yellow:#f4d03f;
-      --yellow-soft:#fff3a6;--ink:#11233f;--muted:#5c6b80;--white:#fff;
-      --cloud:#f5f8fc;--line:#dbe4f0;--shadow:0 18px 50px rgba(6,31,74,.13);
-      --radius:24px;--width:1160px
-    }
-    *,*::before,*::after{box-sizing:border-box}
-    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-    body{margin:0;overflow-x:hidden;color:var(--ink);background:var(--white);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
-    body::before{position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 85% 8%,rgba(244,208,63,.19),transparent 24rem),radial-gradient(circle at 5% 45%,rgba(15,82,186,.08),transparent 28rem);content:"";pointer-events:none}
-    a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:transparent}
-    button{font:inherit;-webkit-tap-highlight-color:transparent}
-    .container{width:min(calc(100% - 2rem),var(--width));margin-inline:auto}
-    .skip{position:fixed;top:1rem;left:1rem;z-index:100;padding:.7rem 1rem;color:#fff;background:var(--navy);border-radius:99px;transform:translateY(-180%)}
-    .skip:focus{transform:none}
-    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);border-bottom:1px solid rgba(219,228,240,.85);backdrop-filter:blur(14px)}
-    .nav{display:flex;min-height:76px;align-items:center;justify-content:space-between;gap:2rem;padding-top:env(safe-area-inset-top)}
-    .brand{display:inline-flex;align-items:center;gap:.75rem;font-weight:850;letter-spacing:-.03em}
-    .mark{display:grid;width:44px;height:44px;place-items:center;color:var(--navy);background:var(--yellow);border:2px solid var(--navy);border-radius:14px 14px 14px 4px;box-shadow:4px 4px 0 var(--blue);font-size:.92rem}
-    .links{display:flex;align-items:center;gap:1.5rem;font-size:.94rem;font-weight:750}
-    .links a:not(.nav-cta){position:relative;padding:.65rem 0}
-    .links a:not(.nav-cta)::after{position:absolute;right:0;bottom:0;left:0;height:3px;background:var(--yellow);border-radius:99px;content:"";transform:scaleX(0);transition:.18s}
-    .links a:hover::after,.links a:focus-visible::after{transform:scaleX(1)}
-    .menu{display:none}
-    .button,.nav-cta{display:inline-flex;min-height:48px;align-items:center;justify-content:center;gap:.55rem;padding:.78rem 1.2rem;border:2px solid var(--navy);border-radius:99px;font-weight:800;transition:transform .18s,box-shadow .18s,background .18s}
-    .primary,.nav-cta{color:#fff;background:var(--blue);box-shadow:4px 4px 0 var(--yellow)}
-    .secondary{color:var(--navy);background:#fff;box-shadow:4px 4px 0 var(--line)}
-    .button:hover,.nav-cta:hover{transform:translate(-2px,-2px)}
-    .primary:hover,.nav-cta:hover{background:var(--blue-dark);box-shadow:6px 6px 0 var(--yellow)}
-    section{scroll-margin-top:76px}
-    .hero{position:relative;overflow:hidden;padding:clamp(5rem,10vw,8.5rem) 0 clamp(4.5rem,9vw,7.5rem)}
-    .hero-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(300px,.8fr);align-items:center;gap:clamp(3rem,8vw,7rem)}
-    .eyebrow{display:inline-flex;align-items:center;gap:.55rem;margin:0 0 1.2rem;color:var(--blue-dark);font-size:.78rem;font-weight:850;letter-spacing:.13em;text-transform:uppercase}
-    .eyebrow::before{width:34px;height:5px;background:var(--yellow);border-radius:99px;content:""}
-    .studio-names{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .75rem;margin:0 0 1.35rem;color:var(--blue-dark);font-size:.86rem;font-weight:800;letter-spacing:.025em}
-    .studio-names span+span::before{margin-right:.75rem;color:var(--yellow);content:"◆";font-size:.55rem;vertical-align:middle}
-    h1,h2,h3,p{margin-top:0}
-    h1,h2{color:var(--navy);line-height:1.04;letter-spacing:-.055em}
-    h1{max-width:760px;margin-bottom:1.5rem;font-size:clamp(3.2rem,8vw,6.8rem)}
-    .highlight{position:relative;display:inline-block;isolation:isolate}
-    .highlight::after{position:absolute;right:-.05em;bottom:.08em;left:-.05em;z-index:-1;height:.23em;background:var(--yellow);border-radius:99px;content:"";transform:rotate(-1deg)}
-    .hero-intro{max-width:650px;margin-bottom:1.35rem;color:var(--muted);font-size:clamp(1.05rem,2vw,1.25rem)}
-    .hero-price{display:flex;align-items:flex-end;gap:.35rem;margin:0 0 1.15rem;color:var(--navy);line-height:.8}.hero-price strong{font-size:clamp(2.8rem,6vw,5rem);letter-spacing:-.07em}.hero-price span{padding-bottom:.35rem;color:var(--blue-dark);font-size:1rem;font-weight:850}
-    .hero-benefits{display:flex;max-width:650px;flex-wrap:wrap;gap:.55rem 1.15rem;margin:0 0 1.7rem;padding:0;list-style:none;color:var(--ink);font-size:.9rem;font-weight:750}.hero-benefits li::before{margin-right:.42rem;color:var(--blue);content:"✓";font-weight:950}
-    .actions{display:flex;flex-wrap:wrap;gap:1rem}
-    .art{position:relative;min-height:440px}
-    .browser{position:absolute;inset:2rem 0 0;overflow:hidden;background:#fff;border:2px solid var(--navy);border-radius:28px 28px 28px 8px;box-shadow:16px 16px 0 var(--yellow),var(--shadow);transform:rotate(2deg)}
-    .browser-top{display:flex;height:52px;align-items:center;gap:.45rem;padding:0 1rem;background:var(--cloud);border-bottom:2px solid var(--navy)}
-    .browser-top i{width:10px;height:10px;background:var(--blue);border-radius:50%}
-    .browser-top i:nth-child(2){background:var(--yellow)}
-    .browser-body{padding:2.2rem}
-    .mock-label{width:34%;height:12px;margin-bottom:1.2rem;background:var(--yellow);border-radius:99px}
-    .mock-line{height:24px;margin-bottom:.75rem;background:var(--navy);border-radius:99px}
-    .mock-line.short{width:68%}
-    .mock-copy{width:84%;height:9px;margin-top:1.5rem;background:var(--line);border-radius:99px;box-shadow:0 18px 0 var(--line),0 36px 0 var(--line)}
-    .mock-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem;margin-top:4rem}
-    .mock-grid i{height:72px;background:var(--cloud);border:2px solid var(--line);border-radius:15px}
-    .spark{position:absolute;top:0;right:-.5rem;display:grid;width:90px;height:90px;place-items:center;color:var(--navy);background:var(--yellow);border:2px solid var(--navy);border-radius:50%;box-shadow:6px 6px 0 var(--blue);font-size:2rem;font-weight:900;transform:rotate(9deg)}
-    .section{padding:clamp(4.5rem,9vw,7.5rem) 0}
-    .soft{background:var(--cloud);border-block:1px solid var(--line)}
-    .heading{display:grid;grid-template-columns:minmax(0,.7fr) minmax(280px,.55fr);align-items:end;justify-content:space-between;gap:2rem;margin-bottom:3rem}
-    h2{max-width:700px;margin-bottom:0;font-size:clamp(2.5rem,5.5vw,4.5rem)}
-    .heading>p{margin-bottom:0;color:var(--muted);font-size:1.05rem}
-    .about-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(300px,1.1fr);gap:1.5rem}
-    .card,.empty{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 12px 32px rgba(6,31,74,.06)}
-    .about{padding:clamp(2rem,5vw,3.5rem)}
-    .about.accent{color:#fff;background:var(--navy);border-color:var(--navy)}
-    .about h3{margin-bottom:1rem;color:var(--navy);font-size:1.5rem;line-height:1.2}
-    .about.accent h3{color:var(--yellow);font-size:clamp(1.8rem,4vw,2.8rem)}
-    .about p:last-child{margin-bottom:0}.about.accent p{color:#dbe7f8}
-    .service-paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:0 0 1.25rem}.service-path{padding:1.35rem 1.5rem;background:var(--navy);border:1px solid var(--navy);border-radius:18px;color:#fff}.service-path strong{display:block;margin-bottom:.35rem;color:var(--yellow);font-size:1.05rem}.service-path p{margin:0;color:#dbe7f8;font-size:.94rem}
-    .collaboration-panel{position:relative;overflow:hidden;margin:0 0 2rem;padding:clamp(1.5rem,4vw,2.5rem);color:#fff;background:var(--navy);border-radius:24px;box-shadow:0 18px 42px rgba(6,31,74,.16)}
-    .collaboration-panel::after{position:absolute;top:-90px;right:-70px;width:230px;height:230px;background:var(--yellow);border-radius:50%;content:"";opacity:.12}
-    .collab-intro{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,.7fr) minmax(260px,1fr);align-items:end;gap:1.5rem;margin-bottom:1.5rem}.collab-intro .eyebrow{color:var(--yellow)}.collab-intro h3{max-width:620px;margin:0;color:#fff;font-size:clamp(1.75rem,4vw,2.65rem);line-height:1.08}.collab-intro>p{margin:0;color:#dbe7f8}
-    .collab-options{position:relative;z-index:1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.collab-option{padding:1.35rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:18px}.collab-option span{display:grid;width:36px;height:36px;margin-bottom:1rem;place-items:center;color:var(--navy);background:var(--yellow);border-radius:50%;font-size:.82rem;font-weight:950}.collab-option strong{display:block;margin-bottom:.35rem;color:#fff;font-size:1.08rem}.collab-option p{margin:0;color:#dbe7f8;font-size:.94rem}
-    .collab-guarantee{position:relative;z-index:1;display:flex;align-items:center;gap:.8rem;margin:1rem 0 0;padding:1rem 1.1rem;color:var(--ink);background:var(--yellow-soft);border-radius:14px;font-weight:750}.collab-guarantee strong{color:var(--navy)}.collab-check{display:grid;width:30px;height:30px;flex:0 0 auto;place-items:center;color:#fff;background:var(--blue);border-radius:50%;font-weight:950}
-    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
-    .service{display:flex;min-height:100%;padding:2rem;flex-direction:column}
-    .number{display:grid;width:46px;height:46px;margin-bottom:1.5rem;place-items:center;color:var(--navy);background:var(--yellow-soft);border-radius:14px;font-size:.85rem;font-weight:900}
-    .service h3{margin-bottom:.7rem;color:var(--navy);font-size:1.3rem}.service>p{margin-bottom:1rem;color:var(--muted)}
-    .service-list{display:grid;gap:.55rem;margin:auto 0 0;padding:1rem 0 0;border-top:1px solid var(--line);list-style:none;color:var(--ink);font-size:.88rem;font-weight:720}.service-list li::before{margin-right:.45rem;color:var(--blue);content:"✓";font-weight:950}
-    .empty{display:grid;min-height:310px;place-items:center;padding:3rem 1.5rem;text-align:center;border:2px dashed #afbdd0;box-shadow:none}
-    .empty>div{max-width:520px}.empty-icon{display:grid;width:64px;height:64px;margin:0 auto 1.4rem;place-items:center;color:var(--navy);background:var(--yellow);border:2px solid var(--navy);border-radius:20px 20px 20px 6px;font-size:1.8rem;font-weight:900}
-    .empty h3{margin-bottom:.55rem;color:var(--navy);font-size:1.5rem}.empty p{margin-bottom:0;color:var(--muted)}
-    .concepts{color:#fff;background:var(--navy)}
-    .concepts h2,.concepts .heading>p{color:#fff}.concepts .eyebrow{color:var(--yellow)}
-    .concepts .empty{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.35)}
-    .concepts .empty h3{color:#fff}.concepts .empty p{color:#c9d7ec}
-    .concept-filters{display:flex;flex-wrap:wrap;gap:.65rem;margin:-.5rem 0 2rem}
-    .concept-filter{min-height:42px;padding:.58rem 1rem;color:#dbe7f8;background:transparent;border:1px solid rgba(255,255,255,.3);border-radius:99px;cursor:pointer;font-weight:800}
-    .concept-filter:hover,.concept-filter[aria-pressed=true]{color:var(--navy);background:var(--yellow);border-color:var(--yellow)}
-    .concept-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem}
-    .concept-card{overflow:hidden;background:#fff;border-radius:24px;box-shadow:0 18px 45px rgba(0,0,0,.18);transition:transform .2s,box-shadow .2s}.concept-card:hover{transform:translateY(-4px);box-shadow:0 24px 55px rgba(0,0,0,.26)}.concept-card[hidden]{display:none}
-    .concept-preview{position:relative;height:260px;overflow:hidden;background:#e8eef7;border-bottom:1px solid var(--line)}
-    .concept-cover{position:absolute;inset:0;display:flex;justify-content:flex-end;padding:1.5rem;color:#fff;background:linear-gradient(135deg,color-mix(in srgb,var(--preview-a) 88%,transparent),color-mix(in srgb,var(--preview-a) 34%,transparent) 58%,color-mix(in srgb,var(--preview-b) 58%,transparent)),var(--preview-image) center/cover;flex-direction:column}
-    .concept-cover::before{position:absolute;top:-55px;right:-35px;width:190px;height:190px;background:var(--preview-b);border:28px solid rgba(255,255,255,.2);border-radius:50%;content:"";mix-blend-mode:screen}
-    .concept-cover span,.concept-cover strong{position:relative;z-index:1;text-shadow:0 2px 16px rgba(0,0,0,.68)}.concept-cover span{margin-bottom:.35rem;font-size:.72rem;font-weight:850;letter-spacing:.12em;text-transform:uppercase}.concept-cover strong{max-width:75%;font-size:1.65rem;line-height:1.05}
-    .concept-preview iframe{position:absolute;inset:0;width:250%;height:650px;border:0;pointer-events:none;opacity:0;transform:scale(.4);transform-origin:top left;transition:opacity .25s}.concept-preview iframe.loaded{opacity:1}
-    .concept-preview::after{position:absolute;inset:0;content:"";background:linear-gradient(180deg,transparent 65%,rgba(6,31,74,.12));pointer-events:none}
-    .concept-body{padding:1.4rem}.concept-type{margin:0 0 .35rem;color:var(--blue-dark);font-size:.72rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.concept-body h3{margin-bottom:.45rem;color:var(--navy);font-size:1.35rem;line-height:1.2}.concept-body>p:not(.concept-type){min-height:3.2em;margin-bottom:1.2rem;color:var(--muted)}
-    .concept-actions{display:flex;flex-wrap:wrap;gap:.7rem}.concept-actions .button{min-height:42px;padding:.58rem 1rem;font-size:.88rem;cursor:pointer}.concept-actions .secondary{box-shadow:none}
-    .concept-dialog{width:min(1120px,calc(100% - 1.5rem));height:min(820px,calc(100% - 1.5rem));padding:0;overflow:hidden;background:#fff;border:2px solid var(--navy);border-radius:24px;box-shadow:0 30px 100px rgba(0,0,0,.45)}.concept-dialog::backdrop{background:rgba(3,15,37,.84);backdrop-filter:blur(6px)}.dialog-bar{display:flex;min-height:62px;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 1rem;background:var(--navy)}.dialog-bar strong{color:#fff}.dialog-close{display:grid;width:42px;height:42px;place-items:center;color:var(--navy);background:var(--yellow);border:0;border-radius:50%;cursor:pointer;font-size:1.3rem;font-weight:900}.concept-dialog iframe{display:block;width:100%;height:calc(100% - 62px);border:0}
-    .contact{position:relative;overflow:hidden;padding:clamp(2.5rem,7vw,5rem);color:#fff;background:var(--blue);border:2px solid var(--navy);border-radius:34px 34px 34px 10px;box-shadow:14px 14px 0 var(--yellow)}
-    .contact::after{position:absolute;top:-100px;right:-80px;width:300px;height:300px;background:var(--yellow);border:34px solid rgba(255,255,255,.25);border-radius:50%;content:""}
-    .contact>*{position:relative;z-index:1}.contact h2{margin-bottom:1rem;color:#fff}.contact>p:not(.eyebrow){max-width:580px;margin-bottom:2rem;color:#edf4ff;font-size:1.1rem}
-    .contact .button{color:var(--navy);background:var(--yellow);box-shadow:5px 5px 0 var(--navy)}
-    .contact-links{display:flex;flex-wrap:wrap;gap:.75rem}.contact-links .button{margin:0}
-    footer{padding:2rem 0 calc(2rem + env(safe-area-inset-bottom));color:var(--muted);border-top:1px solid var(--line)}
-    .footer{display:flex;align-items:center;justify-content:space-between;gap:1rem;font-size:.9rem}.footer p{margin:0}.footer a{color:var(--blue-dark);font-weight:800}
-    :focus-visible{outline:3px solid var(--yellow);outline-offset:4px}
-    @media(max-width:820px){
-      .menu{position:relative;display:grid;width:48px;height:48px;flex:0 0 auto;place-items:center;padding:0;color:var(--navy);background:#fff;border:2px solid var(--navy);border-radius:14px;cursor:pointer}
-      .menu span,.menu::before,.menu::after{position:absolute;width:20px;height:2px;background:currentColor;border-radius:99px;content:"";transition:.18s}.menu::before{transform:translateY(-6px)}.menu::after{transform:translateY(6px)}
-      .menu[aria-expanded=true] span{opacity:0}.menu[aria-expanded=true]::before{transform:rotate(45deg)}.menu[aria-expanded=true]::after{transform:rotate(-45deg)}
-      .links{position:absolute;top:100%;right:0;left:0;display:none;align-items:stretch;padding:1rem;background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow);flex-direction:column;gap:.35rem}
-      .links.open{display:flex}.links a:not(.nav-cta){min-height:48px;padding:.8rem .5rem}
-      .hero-grid,.heading,.about-grid{grid-template-columns:1fr}.art{width:min(100%,500px);min-height:390px;margin-inline:auto}
-      .service-paths,.services,.concept-grid{grid-template-columns:1fr}.collab-intro{grid-template-columns:1fr;align-items:start}.service{display:block}.number{margin-bottom:1.25rem}
-      .section{padding:clamp(3.75rem,9vw,5rem) 0}.concept-preview{height:210px}.concept-preview iframe{display:none}.concept-body>p:not(.concept-type){min-height:0}.concept-card{border-radius:20px}
-    }
-    @media(max-width:520px){
-      .container{width:min(calc(100% - 1.35rem),var(--width))}.nav{min-height:68px}.brand>span:last-child{font-size:.94rem}
-      .hero{padding:3.5rem 0 4.25rem}h1{font-size:clamp(2.75rem,14vw,4rem)}.hero-benefits{display:grid;gap:.5rem}.actions,.actions .button{width:100%}
-      .studio-names{align-items:flex-start;gap:.25rem;flex-direction:column}.studio-names span+span::before{display:none}.collaboration-panel{border-radius:20px}.collab-options{grid-template-columns:1fr}.collab-guarantee{align-items:flex-start}
-      .concept-filters{margin-right:-.675rem;flex-wrap:nowrap;overflow-x:auto;padding:0 .675rem .65rem 0;scrollbar-width:none}.concept-filters::-webkit-scrollbar{display:none}.concept-filter{flex:0 0 auto}
-      .concept-body{padding:1.2rem}.concept-actions,.concept-actions .button{width:100%}.concept-preview{height:190px}.concept-cover strong{font-size:1.45rem}
-      .art{min-height:330px}.browser{right:.8rem;box-shadow:10px 10px 0 var(--yellow),var(--shadow)}.browser-body{padding:1.5rem}.spark{right:0;width:72px;height:72px}
-      .contact{margin-right:.4rem;padding:2rem 1.25rem;box-shadow:7px 7px 0 var(--yellow)}.contact::after{width:180px;height:180px;opacity:.5}.contact-links,.contact-links .button{width:100%}.contact-links .button{padding-inline:.8rem;overflow-wrap:anywhere;font-size:.88rem}.concept-dialog{inset:0;width:100%;max-width:none;height:100%;max-height:none;border:0;border-radius:0}.footer{align-items:flex-start;flex-direction:column}
-    }
-    @media(hover:none){.button:hover,.nav-cta:hover{transform:none}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important}}
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip" href="#main-content">Skip to content</a>
-  <header>
-    <div class="container nav">
-      <a class="brand" href="#top" aria-label="S and J Web Design home"><span class="mark" aria-hidden="true">S&amp;J</span><span>Web Design</span></a>
-      <button class="menu" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation menu"><span></span></button>
-      <nav class="links" id="site-navigation" aria-label="Main navigation">
-        <a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#concepts">Concepts</a><a class="nav-cta" href="#contact">Let's talk</a>
-      </nav>
-    </div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="S and J Digital Agency OS home">
+      <span class="brand-mark">S&amp;J</span>
+      <span>Digital Agency OS</span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
-  <main id="main-content">
-    <section class="hero" id="top">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">S&amp;J Web Design</p>
-          <p class="studio-names" aria-label="Samantha A Nielsen and James C Garrett"><span>Samantha A Nielsen</span><span>James C Garrett</span></p>
-          <h1>Professional websites for <span class="highlight">small businesses.</span></h1>
-          <div class="hero-price" aria-label="Starting at 49 dollars and 99 cents per month"><strong>$49.99</strong><span>/month</span></div>
-          <p class="hero-intro">Everything included. Fast, secure hosting, unlimited updates, ongoing support, and redesigns—without a long-term contract.</p>
-          <ul class="hero-benefits" aria-label="Included benefits"><li>Mobile-first design</li><li>Unlimited updates</li><li>Hosting included</li><li>Local, personal support</li></ul>
-          <div class="actions"><a class="button primary" href="mailto:s.j.webdesign.contact@gmail.com?subject=Start%20my%20%2449.99%2Fmonth%20website">Start your website <span aria-hidden="true">→</span></a></div>
-        </div>
-        <div class="art" aria-hidden="true">
-          <div class="browser"><div class="browser-top"><i></i><i></i><i></i></div><div class="browser-body"><div class="mock-label"></div><div class="mock-line"></div><div class="mock-line short"></div><div class="mock-copy"></div><div class="mock-grid"><i></i><i></i></div></div></div><div class="spark">✦</div>
-        </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">SJDOS-MINI-DRAFT-FAST-WEB</p>
+        <h1>A small website shell for launching cleaner digital systems.</h1>
+        <p>S&amp;J Digital Agency OS helps small teams shape simple websites, clearer content, and practical workflows without expensive tools or heavy setup.</p>
+        <a class="button" href="#contact">Start a simple demo</a>
+      </div>
+
+      <div class="command-panel" aria-label="Demo build checklist">
+        <p><span>status</span> one-page shell</p>
+        <p><span>stack</span> html + css</p>
+        <p><span>cost</span> no paid tools</p>
+        <p><span>speed</span> fast to edit</p>
       </div>
     </section>
-    <section class="section soft" id="about">
-      <div class="container">
-        <div class="heading"><div><p class="eyebrow">Who we are</p><h2>Good design should feel like you.</h2></div><p>We pair thoughtful strategy with memorable visuals to create websites that are easy to use, easy to maintain, and built around your goals.</p></div>
-        <div class="about-grid">
-          <article class="card about accent"><h3>Small team.<br>Big attention to detail.</h3><p>Every project gets a focused, collaborative approach from first idea to final launch.</p></article>
-          <article class="card about"><h3>Design that works hard</h3><p>A beautiful website is only the beginning. We focus on clear messaging, intuitive layouts, mobile-friendly experiences, and purposeful calls to action—so every part of your site has a job to do.</p></article>
-        </div>
-      </div>
-    </section>
+
     <section class="section" id="services">
-      <div class="container">
-        <div class="heading"><div><p class="eyebrow">What we do</p><h2>Everything your website needs to work harder.</h2></div><p>From strategy and design through hosting and ongoing updates, we handle the details so you can focus on running your business.</p></div>
-        <div class="service-paths" aria-label="Website design options"><article class="service-path"><strong>Commissioned custom website</strong><p>Designed from the ground up around your business, customers, content, and visual direction.</p></article><article class="service-path"><strong>Template-based website</strong><p>A faster, budget-conscious starting point that we customize with your branding, content, colors, and goals.</p></article></div>
-        <div class="collaboration-panel">
-          <div class="collab-intro"><div><p class="eyebrow">Flexible collaboration</p><h3>Stay supported—or take the reins.</h3></div><p>You choose how we work together after launch. We can remain your website partner or prepare everything for a smooth, confident handoff.</p></div>
-          <div class="collab-options">
-            <article class="collab-option"><span aria-hidden="true">01</span><strong>Ongoing Partnership</strong><p>Keep us involved for updates, guidance, hosting, and continued support as your business grows and your website evolves.</p></article>
-            <article class="collab-option"><span aria-hidden="true">02</span><strong>Complete Handoff</strong><p>Take full ownership of your finished website with an organized transition, clear guidance, and the information you need to move forward.</p></article>
-          </div>
-          <p class="collab-guarantee"><span class="collab-check" aria-hidden="true">✓</span><span><strong>Our promise:</strong> Whichever path you choose, you receive 100% hands-on service throughout the entire project. We listen, collaborate, and refine every detail until you are completely satisfied with the final result.</span></p>
-        </div>
-        <div class="services">
-          <article class="card service"><span class="number">01</span><h3>Strategy &amp; Content</h3><p>We organize your message around what customers need to understand, trust, and do next.</p><ul class="service-list"><li>Page and content planning</li><li>Customer-focused messaging</li><li>Clear calls to action</li></ul></article>
-          <article class="card service"><span class="number">02</span><h3>Custom Web Design</h3><p>A professional visual direction makes your business memorable while keeping every page easy to navigate.</p><ul class="service-list"><li>Brand-matched layouts</li><li>Mobile-first design</li><li>Accessible user experience</li></ul></article>
-          <article class="card service"><span class="number">03</span><h3>Responsive Development</h3><p>Clean, lightweight development keeps your website fast and dependable on phones, tablets, and desktops.</p><ul class="service-list"><li>Fast-loading pages</li><li>Cross-device testing</li><li>Search-friendly structure</li></ul></article>
-          <article class="card service"><span class="number">04</span><h3>Hosting &amp; Security</h3><p>Fast, secure hosting keeps your website online, protected, and loading quickly without another bill to manage.</p><ul class="service-list"><li>Hosting included</li><li>SSL security</li><li>Performance monitoring</li></ul></article>
-          <article class="card service"><span class="number">05</span><h3>Unlimited Updates</h3><p>Your website can grow with your business. Send us new text, photos, services, or promotions whenever things change.</p><ul class="service-list"><li>Content and photo changes</li><li>Service updates</li><li>Seasonal promotions</li></ul></article>
-          <article class="card service"><span class="number">06</span><h3>Ongoing Support</h3><p>Get direct, personal help when you have a question, spot an issue, or want to improve the customer experience.</p><ul class="service-list"><li>Local, personal service</li><li>Technical troubleshooting</li><li>Design guidance</li></ul></article>
-        </div>
+      <p class="eyebrow">Services</p>
+      <h2>Three simple ways to start.</h2>
+      <div class="card-grid">
+        <article class="card">
+          <span class="card-number">01</span>
+          <h3>Website Shells</h3>
+          <p>Quick one-page demos that prove the layout, message, and direction before a larger build.</p>
+        </article>
+        <article class="card">
+          <span class="card-number">02</span>
+          <h3>Content Direction</h3>
+          <p>Starter copy, section order, and calls to action that make the page easier to understand.</p>
+        </article>
+        <article class="card">
+          <span class="card-number">03</span>
+          <h3>Upgrade Planning</h3>
+          <p>A clear next-step list for turning a small demo into a full website when the idea is approved.</p>
+        </article>
       </div>
     </section>
-    <section class="section soft" id="projects">
-      <div class="container">
-        <div class="heading"><div><p class="eyebrow">Selected projects</p><h2>Our work.</h2></div><p>This space is ready for finished client projects, case studies, and launch highlights.</p></div>
-        <div class="empty"><div><div class="empty-icon" aria-hidden="true">＋</div><h3>Projects coming soon</h3><p>New work will be added here as the S&amp;J portfolio grows.</p></div></div>
+
+    <section class="section split" id="about">
+      <div>
+        <p class="eyebrow">What we do</p>
+        <h2>Simple first, stronger later.</h2>
       </div>
+      <p>S&amp;J Digital Agency OS starts with the smallest useful version: one clear page, readable content, responsive layout, and no unnecessary setup. This demo is intentionally lean so it can be reviewed, edited, and upgraded quickly.</p>
     </section>
-    <section class="section concepts" id="concepts">
-      <div class="container">
-        <div class="heading"><div><p class="eyebrow">Creative playground</p><h2>Concepts.</h2></div><p>Ten responsive website directions for restaurants, local makers, and home-service businesses. Filter the collection, then open any concept to explore it live.</p></div>
-        <div class="concept-filters" role="group" aria-label="Filter website concepts"><button class="concept-filter" type="button" data-filter="all" aria-pressed="true">All concepts</button><button class="concept-filter" type="button" data-filter="food" aria-pressed="false">Food &amp; drink</button><button class="concept-filter" type="button" data-filter="home" aria-pressed="false">Home services</button><button class="concept-filter" type="button" data-filter="style" aria-pressed="false">Personal style</button></div>
-        <div class="concept-grid" id="concept-grid"></div></div>
-    </section>
-    <dialog class="concept-dialog" id="concept-dialog" aria-labelledby="concept-dialog-title"><div class="dialog-bar"><strong id="concept-dialog-title">Website concept</strong><button class="dialog-close" type="button" aria-label="Close concept preview">×</button></div><iframe title="Interactive website concept" src="about:blank"></iframe></dialog>
-    <section class="section" id="contact">
-      <div class="container"><div class="contact"><p class="eyebrow">Start a conversation</p><h2>Have a project in mind?</h2><p>Tell us what you're building, refreshing, or dreaming up. We'd love to hear about it.</p><div class="contact-links"><a class="button" href="tel:+12098140292" aria-label="Call S and J Web Design at 209 814 0292">(209) 814-0292</a><a class="button" href="mailto:s.j.webdesign.contact@gmail.com">s.j.webdesign.contact@gmail.com <span aria-hidden="true">→</span></a></div></div></div>
+
+    <section class="section contact" id="contact">
+      <p class="eyebrow">Contact</p>
+      <h2>Ready to test the idea?</h2>
+      <p>Placeholder contact info: call <a href="tel:+15550101234">(555) 010-1234</a> or email <a href="mailto:hello@sjwebdesignca.com">hello@sjwebdesignca.com</a>.</p>
+      <a class="button button-light" href="mailto:hello@sjwebdesignca.com">Email S&amp;J</a>
     </section>
   </main>
-  <footer><div class="container footer"><p>© <span id="year"></span> S&amp;J Web Design. All rights reserved.</p><a href="#top">Back to top ↑</a></div></footer>
-  <script>
-    const button=document.querySelector('.menu'),nav=document.querySelector('.links');
-    button.addEventListener('click',()=>{const open=button.getAttribute('aria-expanded')==='true';button.setAttribute('aria-expanded',String(!open));button.setAttribute('aria-label',open?'Open navigation menu':'Close navigation menu');nav.classList.toggle('open')});
-    nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');button.setAttribute('aria-expanded','false');button.setAttribute('aria-label','Open navigation menu')}));
-    const concepts=[
-      ['Sierra Bloom Landscapes','Sierra_Bloom_Landscapes','home','Landscaping · Home services','A polished landscape-design direction built around transformation stories and consultation calls.','photo-1416879595882-3373a0480b5b','#263d2a','#b9a7ff'],
-      ['FreshCut Lawn Care','FreshCut_Lawn_Care','home','Lawn care · Home services','A friendly, conversion-focused lawn-care site with simple service choices and local credibility.','photo-1558904541-efa843a96f01','#1847ff','#c8ff2e'],
-      ['Golden State Outdoor Living','Golden_State_Outdoor_Living','home','Outdoor construction · Home services','A premium outdoor-living concept shaped for high-value project showcases and lead generation.','photo-1600607687920-4e2a09cf159d','#32143f','#d48b5b'],
-      ['Ember House Grill','Ember_House_Grill','food','Restaurant · Food & drink','A warm, confident restaurant concept that puts signature dishes and reservations up front.','photo-1544025162-d76694265947','#161616','#ff4e32'],
-      ['Casa Sol Cocina','Casa_Sol_Cocina','food','Restaurant · Food & drink','A colorful mobile-first restaurant direction designed for fast browsing and online ordering.','photo-1565299585323-38d6b0865b47','#ef2f78','#ff8a1f'],
-      ['Nonna Rosa Kitchen','Nonna_Rosa_Kitchen','food','Restaurant · Food & drink','A welcoming neighborhood-kitchen concept centered on story, comfort, and memorable meals.','photo-1552566626-52f8b828add9','#7b2335','#f3d77a'],
-      ['Harbor Coffee Co.','Harbor_Coffee_Co','food','Coffee shop · Food & drink','A clean café concept with strong mobile calls to action and a relaxed coastal personality.','photo-1495474472287-4d71bcdd2085','#14395b','#9fe0c5'],
-      ['Honeycomb Bakery Café','Honeycomb_Bakery_Cafe','food','Bakery · Food & drink','A cheerful bakery concept made to spotlight products, seasonal features, and daily visits.','photo-1509440159596-0249088772ff','#e0a51b','#b6a6ff'],
-      ['Precision Plumbing Co.','Precision_Plumbing_Co','home','Plumbing · Home services','A trustworthy service-business direction with clear emergency help and estimate pathways.','photo-1585704032915-c3400ca199e7','#182b69','#caff3d'],
-      ['Northside Barber Studio','Northside_Barber_Studio','style','Barber studio · Personal style','A sharp appointment-led concept balancing neighborhood character with a refined visual system.','photo-1503951914875-452162b0f3f1','#111111','#f1b8ca']
-    ];
-    const grid=document.getElementById('concept-grid');
-    grid.innerHTML=concepts.map(([name,slug,category,type,copy,image,previewA,previewB])=>`<article class="concept-card" data-category="${category}"><div class="concept-preview"><div class="concept-cover" aria-hidden="true" style="--preview-a:${previewA};--preview-b:${previewB};--preview-image:url('https://images.unsplash.com/${image}?auto=format&amp;fit=crop&amp;w=900&amp;q=72')"><span>${type}</span><strong>${name}</strong></div><iframe loading="lazy" tabindex="-1" title="${name} visual preview" data-src="concepts/${slug}/index.html" src="about:blank"></iframe></div><div class="concept-body"><p class="concept-type">${type}</p><h3>${name}</h3><p>${copy}</p><div class="concept-actions"><button class="button primary concept-open" type="button" data-src="concepts/${slug}/index.html" data-title="${name}">Explore live <span aria-hidden="true">→</span></button><a class="button secondary" href="concepts/${slug}/index.html" target="_blank" rel="noopener">New tab</a></div></div></article>`).join('');
-    const previewFrames=document.querySelectorAll('.concept-preview iframe');
-    if(matchMedia('(min-width:821px)').matches){const loadPreview=frame=>{if(frame.dataset.src&&!frame.classList.contains('loaded')){frame.addEventListener('load',()=>frame.classList.add('loaded'),{once:true});frame.src=frame.dataset.src}};if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){loadPreview(entry.target);observer.unobserve(entry.target)}}),{rootMargin:'300px'});previewFrames.forEach(frame=>observer.observe(frame))}else{previewFrames.forEach(loadPreview)}}
-    const filters=document.querySelectorAll('.concept-filter'),cards=document.querySelectorAll('.concept-card');
-    filters.forEach(filter=>filter.addEventListener('click',()=>{filters.forEach(item=>item.setAttribute('aria-pressed','false'));filter.setAttribute('aria-pressed','true');cards.forEach(card=>{card.hidden=filter.dataset.filter!=='all'&&card.dataset.category!==filter.dataset.filter})}));
-    const dialog=document.getElementById('concept-dialog'),dialogFrame=dialog.querySelector('iframe'),dialogTitle=document.getElementById('concept-dialog-title');
-    document.querySelectorAll('.concept-open').forEach(open=>open.addEventListener('click',()=>{dialogTitle.textContent=open.dataset.title;dialogFrame.src=open.dataset.src;dialog.showModal()}));
-    const closeDialog=()=>{dialog.close();dialogFrame.src='about:blank'};
-    dialog.querySelector('.dialog-close').addEventListener('click',closeDialog);dialog.addEventListener('click',event=>{if(event.target===dialog)closeDialog()});
-    document.getElementById('year').textContent=new Date().getFullYear();
-  </script>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 S&amp;J Digital Agency OS. Demo shell for quick review.</p>
+  </footer>
 </body>
 </html>
