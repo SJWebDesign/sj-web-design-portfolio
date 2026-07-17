@@ -112,7 +112,12 @@
     .concept-filter:hover,.concept-filter[aria-pressed=true]{color:var(--navy);background:var(--yellow);border-color:var(--yellow)}
     .concept-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem}
     .concept-card{overflow:hidden;background:#fff;border-radius:24px;box-shadow:0 18px 45px rgba(0,0,0,.18);transition:transform .2s,box-shadow .2s}.concept-card:hover{transform:translateY(-4px);box-shadow:0 24px 55px rgba(0,0,0,.26)}.concept-card[hidden]{display:none}
-    .concept-preview{position:relative;height:260px;overflow:hidden;background:#e8eef7;border-bottom:1px solid var(--line)}.concept-preview iframe{width:1440px;height:900px;border:0;pointer-events:none;transform:scale(.4);transform-origin:top left}.concept-preview::after{position:absolute;inset:0;content:"";background:linear-gradient(180deg,transparent 65%,rgba(6,31,74,.12));pointer-events:none}
+    .concept-preview{position:relative;height:260px;overflow:hidden;background:#e8eef7;border-bottom:1px solid var(--line)}
+    .concept-cover{position:absolute;inset:0;display:flex;justify-content:flex-end;padding:1.5rem;color:#fff;background:linear-gradient(135deg,var(--blue-dark),var(--blue) 58%,#3178d5);flex-direction:column}
+    .concept-cover::before{position:absolute;top:-55px;right:-35px;width:190px;height:190px;background:var(--yellow);border:28px solid rgba(255,255,255,.18);border-radius:50%;content:""}
+    .concept-cover span,.concept-cover strong{position:relative;z-index:1}.concept-cover span{margin-bottom:.35rem;font-size:.72rem;font-weight:850;letter-spacing:.12em;text-transform:uppercase}.concept-cover strong{max-width:75%;font-size:1.65rem;line-height:1.05}
+    .concept-preview iframe{position:absolute;inset:0;width:1440px;height:900px;border:0;pointer-events:none;opacity:0;transform:scale(.4);transform-origin:top left;transition:opacity .25s}.concept-preview iframe.loaded{opacity:1}
+    .concept-preview::after{position:absolute;inset:0;content:"";background:linear-gradient(180deg,transparent 65%,rgba(6,31,74,.12));pointer-events:none}
     .concept-body{padding:1.4rem}.concept-type{margin:0 0 .35rem;color:var(--blue-dark);font-size:.72rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.concept-body h3{margin-bottom:.45rem;color:var(--navy);font-size:1.35rem;line-height:1.2}.concept-body>p:not(.concept-type){min-height:3.2em;margin-bottom:1.2rem;color:var(--muted)}
     .concept-actions{display:flex;flex-wrap:wrap;gap:.7rem}.concept-actions .button{min-height:42px;padding:.58rem 1rem;font-size:.88rem;cursor:pointer}.concept-actions .secondary{box-shadow:none}
     .concept-dialog{width:min(1120px,calc(100% - 1.5rem));height:min(820px,calc(100% - 1.5rem));padding:0;overflow:hidden;background:#fff;border:2px solid var(--navy);border-radius:24px;box-shadow:0 30px 100px rgba(0,0,0,.45)}.concept-dialog::backdrop{background:rgba(3,15,37,.84);backdrop-filter:blur(6px)}.dialog-bar{display:flex;min-height:62px;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 1rem;background:var(--navy)}.dialog-bar strong{color:#fff}.dialog-close{display:grid;width:42px;height:42px;place-items:center;color:var(--navy);background:var(--yellow);border:0;border-radius:50%;cursor:pointer;font-size:1.3rem;font-weight:900}.concept-dialog iframe{display:block;width:100%;height:calc(100% - 62px);border:0}
@@ -120,9 +125,6 @@
     .contact::after{position:absolute;top:-100px;right:-80px;width:300px;height:300px;background:var(--yellow);border:34px solid rgba(255,255,255,.25);border-radius:50%;content:""}
     .contact>*{position:relative;z-index:1}.contact h2{margin-bottom:1rem;color:#fff}.contact>p:not(.eyebrow){max-width:580px;margin-bottom:2rem;color:#edf4ff;font-size:1.1rem}
     .contact .button{color:var(--navy);background:var(--yellow);box-shadow:5px 5px 0 var(--navy)}
-    .contact-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;max-width:720px;margin:0 0 2rem}
-    .contact-person{padding:1.1rem 1.2rem;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);border-radius:18px}
-    .contact-person strong{display:block;color:#fff;font-size:1.08rem}.contact-person span{display:block;color:#dbe7f8;font-size:.84rem;font-weight:750;text-transform:uppercase;letter-spacing:.08em}
     .contact-links{display:flex;flex-wrap:wrap;gap:.75rem}.contact-links .button{margin:0}
     footer{padding:2rem 0 calc(2rem + env(safe-area-inset-bottom));color:var(--muted);border-top:1px solid var(--line)}
     .footer{display:flex;align-items:center;justify-content:space-between;gap:1rem;font-size:.9rem}.footer p{margin:0}.footer a{color:var(--blue-dark);font-weight:800}
@@ -134,13 +136,17 @@
       .links{position:absolute;top:100%;right:0;left:0;display:none;align-items:stretch;padding:1rem;background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow);flex-direction:column;gap:.35rem}
       .links.open{display:flex}.links a:not(.nav-cta){min-height:48px;padding:.8rem .5rem}
       .hero-grid,.heading,.about-grid{grid-template-columns:1fr}.art{width:min(100%,500px);min-height:390px;margin-inline:auto}
-      .services,.concept-grid{grid-template-columns:1fr}.service{display:grid;grid-template-columns:auto 1fr;column-gap:1rem}.number{grid-row:span 2;margin-bottom:0}.concept-preview iframe{transform:scale(.36)}
+      .services,.concept-grid{grid-template-columns:1fr}.service{display:grid;grid-template-columns:auto 1fr;column-gap:1rem}.number{grid-row:span 2;margin-bottom:0}
+      .section{padding:clamp(3.75rem,9vw,5rem) 0}.concept-preview{height:210px}.concept-preview iframe{display:none}.concept-body>p:not(.concept-type){min-height:0}.concept-card{border-radius:20px}
     }
     @media(max-width:520px){
       .container{width:min(calc(100% - 1.35rem),var(--width))}.nav{min-height:68px}.brand>span:last-child{font-size:.94rem}
-      .hero{padding-top:4rem}h1{font-size:clamp(2.9rem,15vw,4.4rem)}.actions,.actions .button{width:100%}
+      .hero{padding:3.5rem 0 4.25rem}h1{font-size:clamp(2.75rem,14vw,4rem)}.actions,.actions .button{width:100%}
+      .studio-names{align-items:flex-start;gap:.25rem;flex-direction:column}.studio-names span+span::before{display:none}
+      .concept-filters{margin-right:-.675rem;flex-wrap:nowrap;overflow-x:auto;padding:0 .675rem .65rem 0;scrollbar-width:none}.concept-filters::-webkit-scrollbar{display:none}.concept-filter{flex:0 0 auto}
+      .concept-body{padding:1.2rem}.concept-actions,.concept-actions .button{width:100%}.concept-preview{height:190px}.concept-cover strong{font-size:1.45rem}
       .art{min-height:330px}.browser{right:.8rem;box-shadow:10px 10px 0 var(--yellow),var(--shadow)}.browser-body{padding:1.5rem}.spark{right:0;width:72px;height:72px}
-      .contact{margin-right:.55rem;box-shadow:8px 8px 0 var(--yellow)}.contact::after{width:200px;height:200px;opacity:.65}.contact-details{grid-template-columns:1fr}.contact-links,.contact-links .button{width:100%}.footer{align-items:flex-start;flex-direction:column}
+      .contact{margin-right:.4rem;padding:2rem 1.25rem;box-shadow:7px 7px 0 var(--yellow)}.contact::after{width:180px;height:180px;opacity:.5}.contact-links,.contact-links .button{width:100%}.contact-links .button{padding-inline:.8rem;overflow-wrap:anywhere;font-size:.88rem}.concept-dialog{inset:0;width:100%;max-width:none;height:100%;max-height:none;border:0;border-radius:0}.footer{align-items:flex-start;flex-direction:column}
     }
     @media(hover:none){.button:hover,.nav-cta:hover{transform:none}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important}}
@@ -205,7 +211,7 @@
     </section>
     <dialog class="concept-dialog" id="concept-dialog" aria-labelledby="concept-dialog-title"><div class="dialog-bar"><strong id="concept-dialog-title">Website concept</strong><button class="dialog-close" type="button" aria-label="Close concept preview">×</button></div><iframe title="Interactive website concept" src="about:blank"></iframe></dialog>
     <section class="section" id="contact">
-      <div class="container"><div class="contact"><p class="eyebrow">Start a conversation</p><h2>Have a project in mind?</h2><p>Tell us what you're building, refreshing, or dreaming up. We'd love to hear about it.</p><div class="contact-details"><div class="contact-person"><span>Contact</span><strong>Samantha A Nielsen</strong></div><div class="contact-person"><span>S&amp;J Web Design</span><strong>James C Garrett</strong></div></div><div class="contact-links"><a class="button" href="tel:+12098140292" aria-label="Call Samantha A Nielsen at 209 814 0292">(209) 814-0292</a><a class="button" href="mailto:s.j.webdesign.contact@gmail.com">s.j.webdesign.contact@gmail.com <span aria-hidden="true">→</span></a></div></div></div>
+      <div class="container"><div class="contact"><p class="eyebrow">Start a conversation</p><h2>Have a project in mind?</h2><p>Tell us what you're building, refreshing, or dreaming up. We'd love to hear about it.</p><div class="contact-links"><a class="button" href="tel:+12098140292" aria-label="Call S and J Web Design at 209 814 0292">(209) 814-0292</a><a class="button" href="mailto:s.j.webdesign.contact@gmail.com">s.j.webdesign.contact@gmail.com <span aria-hidden="true">→</span></a></div></div></div>
     </section>
   </main>
   <footer><div class="container footer"><p>© <span id="year"></span> S&amp;J Web Design. All rights reserved.</p><a href="#top">Back to top ↑</a></div></footer>
@@ -226,7 +232,9 @@
       ['Northside Barber Studio','Northside_Barber_Studio','style','Barber studio · Personal style','A sharp appointment-led concept balancing neighborhood character with a refined visual system.']
     ];
     const grid=document.getElementById('concept-grid');
-    grid.innerHTML=concepts.map(([name,slug,category,type,copy])=>`<article class="concept-card" data-category="${category}"><div class="concept-preview"><iframe loading="lazy" tabindex="-1" title="${name} visual preview" src="concepts/${slug}/index.html"></iframe></div><div class="concept-body"><p class="concept-type">${type}</p><h3>${name}</h3><p>${copy}</p><div class="concept-actions"><button class="button primary concept-open" type="button" data-src="concepts/${slug}/index.html" data-title="${name}">Explore live <span aria-hidden="true">→</span></button><a class="button secondary" href="concepts/${slug}/index.html" target="_blank" rel="noopener">New tab</a></div></div></article>`).join('');
+    grid.innerHTML=concepts.map(([name,slug,category,type,copy])=>`<article class="concept-card" data-category="${category}"><div class="concept-preview"><div class="concept-cover" aria-hidden="true"><span>${type}</span><strong>${name}</strong></div><iframe loading="lazy" tabindex="-1" title="${name} visual preview" data-src="concepts/${slug}/index.html" src="about:blank"></iframe></div><div class="concept-body"><p class="concept-type">${type}</p><h3>${name}</h3><p>${copy}</p><div class="concept-actions"><button class="button primary concept-open" type="button" data-src="concepts/${slug}/index.html" data-title="${name}">Explore live <span aria-hidden="true">→</span></button><a class="button secondary" href="concepts/${slug}/index.html" target="_blank" rel="noopener">New tab</a></div></div></article>`).join('');
+    const previewFrames=document.querySelectorAll('.concept-preview iframe');
+    if(matchMedia('(min-width:821px)').matches){const loadPreview=frame=>{if(frame.dataset.src&&!frame.classList.contains('loaded')){frame.addEventListener('load',()=>frame.classList.add('loaded'),{once:true});frame.src=frame.dataset.src}};if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){loadPreview(entry.target);observer.unobserve(entry.target)}}),{rootMargin:'300px'});previewFrames.forEach(frame=>observer.observe(frame))}else{previewFrames.forEach(loadPreview)}}
     const filters=document.querySelectorAll('.concept-filter'),cards=document.querySelectorAll('.concept-card');
     filters.forEach(filter=>filter.addEventListener('click',()=>{filters.forEach(item=>item.setAttribute('aria-pressed','false'));filter.setAttribute('aria-pressed','true');cards.forEach(card=>{card.hidden=filter.dataset.filter!=='all'&&card.dataset.category!==filter.dataset.filter})}));
     const dialog=document.getElementById('concept-dialog'),dialogFrame=dialog.querySelector('iframe'),dialogTitle=document.getElementById('concept-dialog-title');
