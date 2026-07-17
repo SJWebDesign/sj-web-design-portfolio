@@ -30,11 +30,11 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 
 ### v0.11.2-footer-copyright - 2026-07-17
 
-- Commit: pending at time of writing
+- Commit: `7088471`
 - Summary: Updated the footer copyright line.
 - Changed: Removed pricing copy from the bottom footer and replaced it with `© 2026 S&J Tech Services LLC. All rights reserved.`
 - Files changed: `index.html`, `CHANGES_LEDGER.md`
-- Deployment: Pending push to `main`.
+- Deployment: Pushed to `main`; live footer verified with no pricing text.
 - Notes: Pricing remains in the main pricing section; only the footer pricing mention was removed.
 
 ### v0.11.1-ledger-repo-only - 2026-07-17
