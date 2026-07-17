@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.10.1-changes-ledger`
+Current version: `v0.10.2-ledger-link`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,15 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.10.2-ledger-link - 2026-07-17
+
+- Commit: pending at time of writing
+- Summary: Added a homepage footer link to the public changes ledger.
+- Changed: Linked `index.html` to `changes-ledger.html` and updated the current ledger version.
+- Files changed: `index.html`, `CHANGES_LEDGER.md`
+- Deployment: Pending push to `main`.
+- Notes: This makes the ledger discoverable from the live site footer.
 
 ### v0.10.1-changes-ledger - 2026-07-17
 
