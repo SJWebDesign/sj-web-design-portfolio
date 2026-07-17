@@ -30,11 +30,11 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 
 ### v0.11.0-personal-pricing-chart - 2026-07-17
 
-- Commit: release commit
+- Commit: `530979f`
 - Summary: Added personally built website messaging, dropdown pricing, and a price comparison sheet.
 - Changed: Stated that S&J builds the websites directly, added pricing from $49.99/month to $99.99/month based on page count, added dropdown pricing tiers, added a comparison table, and made clear that every plan includes page update features.
 - Files changed: `index.html`, `style.css`, `changes-ledger.html`, `CHANGES_LEDGER.md`
-- Deployment: Pending push to `main`.
+- Deployment: Pushed to `main`; live homepage and public ledger page verified.
 - Notes: Requested by the user as part of completing the website pricing presentation.
 
 ### v0.10.3-brand-pricing-copy - 2026-07-17
