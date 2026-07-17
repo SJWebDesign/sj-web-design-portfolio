@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.10.2-ledger-link`
+Current version: `v0.10.3-brand-pricing-copy`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,15 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.10.3-brand-pricing-copy - 2026-07-17
+
+- Commit: pending at time of writing
+- Summary: Updated homepage branding, owner names, and pricing-first hero copy.
+- Changed: Replaced S&J Digital Agency OS with S&J Web Design, replaced the demo marker with Samantha A. Nielsen and James C. Garrett, and rewrote the hero headline around professional websites starting at $49.99/month.
+- Files changed: `index.html`, `changes-ledger.html`, `CHANGES_LEDGER.md`
+- Deployment: Pending push to `main`.
+- Notes: Requested by the user as part of completing the website copy.
 
 ### v0.10.2-ledger-link - 2026-07-17
 
