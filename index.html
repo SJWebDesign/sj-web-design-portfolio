@@ -99,7 +99,11 @@
     .about.accent h3{color:var(--yellow);font-size:clamp(1.8rem,4vw,2.8rem)}
     .about p:last-child{margin-bottom:0}.about.accent p{color:#dbe7f8}
     .service-paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:0 0 1.25rem}.service-path{padding:1.35rem 1.5rem;background:var(--navy);border:1px solid var(--navy);border-radius:18px;color:#fff}.service-path strong{display:block;margin-bottom:.35rem;color:var(--yellow);font-size:1.05rem}.service-path p{margin:0;color:#dbe7f8;font-size:.94rem}
-    .service-promise{display:flex;align-items:flex-start;gap:1rem;margin:0 0 2rem;padding:1.25rem 1.5rem;background:var(--yellow-soft);border:1px solid #e8cf67;border-radius:18px}.service-promise span{display:grid;width:42px;height:42px;flex:0 0 auto;place-items:center;color:#fff;background:var(--blue);border-radius:13px;font-weight:900}.service-promise p{margin:0;color:var(--ink)}
+    .collaboration-panel{position:relative;overflow:hidden;margin:0 0 2rem;padding:clamp(1.5rem,4vw,2.5rem);color:#fff;background:var(--navy);border-radius:24px;box-shadow:0 18px 42px rgba(6,31,74,.16)}
+    .collaboration-panel::after{position:absolute;top:-90px;right:-70px;width:230px;height:230px;background:var(--yellow);border-radius:50%;content:"";opacity:.12}
+    .collab-intro{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,.7fr) minmax(260px,1fr);align-items:end;gap:1.5rem;margin-bottom:1.5rem}.collab-intro .eyebrow{color:var(--yellow)}.collab-intro h3{max-width:620px;margin:0;color:#fff;font-size:clamp(1.75rem,4vw,2.65rem);line-height:1.08}.collab-intro>p{margin:0;color:#dbe7f8}
+    .collab-options{position:relative;z-index:1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.collab-option{padding:1.35rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:18px}.collab-option span{display:grid;width:36px;height:36px;margin-bottom:1rem;place-items:center;color:var(--navy);background:var(--yellow);border-radius:50%;font-size:.82rem;font-weight:950}.collab-option strong{display:block;margin-bottom:.35rem;color:#fff;font-size:1.08rem}.collab-option p{margin:0;color:#dbe7f8;font-size:.94rem}
+    .collab-guarantee{position:relative;z-index:1;display:flex;align-items:center;gap:.8rem;margin:1rem 0 0;padding:1rem 1.1rem;color:var(--ink);background:var(--yellow-soft);border-radius:14px;font-weight:750}.collab-guarantee strong{color:var(--navy)}.collab-check{display:grid;width:30px;height:30px;flex:0 0 auto;place-items:center;color:#fff;background:var(--blue);border-radius:50%;font-weight:950}
     .services{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
     .service{display:flex;min-height:100%;padding:2rem;flex-direction:column}
     .number{display:grid;width:46px;height:46px;margin-bottom:1.5rem;place-items:center;color:var(--navy);background:var(--yellow-soft);border-radius:14px;font-size:.85rem;font-weight:900}
@@ -141,13 +145,13 @@
       .links{position:absolute;top:100%;right:0;left:0;display:none;align-items:stretch;padding:1rem;background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow);flex-direction:column;gap:.35rem}
       .links.open{display:flex}.links a:not(.nav-cta){min-height:48px;padding:.8rem .5rem}
       .hero-grid,.heading,.about-grid{grid-template-columns:1fr}.art{width:min(100%,500px);min-height:390px;margin-inline:auto}
-      .service-paths,.services,.concept-grid{grid-template-columns:1fr}.service{display:block}.number{margin-bottom:1.25rem}
+      .service-paths,.services,.concept-grid{grid-template-columns:1fr}.collab-intro{grid-template-columns:1fr;align-items:start}.service{display:block}.number{margin-bottom:1.25rem}
       .section{padding:clamp(3.75rem,9vw,5rem) 0}.concept-preview{height:210px}.concept-preview iframe{display:none}.concept-body>p:not(.concept-type){min-height:0}.concept-card{border-radius:20px}
     }
     @media(max-width:520px){
       .container{width:min(calc(100% - 1.35rem),var(--width))}.nav{min-height:68px}.brand>span:last-child{font-size:.94rem}
       .hero{padding:3.5rem 0 4.25rem}h1{font-size:clamp(2.75rem,14vw,4rem)}.hero-benefits{display:grid;gap:.5rem}.actions,.actions .button{width:100%}
-      .studio-names{align-items:flex-start;gap:.25rem;flex-direction:column}.studio-names span+span::before{display:none}
+      .studio-names{align-items:flex-start;gap:.25rem;flex-direction:column}.studio-names span+span::before{display:none}.collaboration-panel{border-radius:20px}.collab-options{grid-template-columns:1fr}.collab-guarantee{align-items:flex-start}
       .concept-filters{margin-right:-.675rem;flex-wrap:nowrap;overflow-x:auto;padding:0 .675rem .65rem 0;scrollbar-width:none}.concept-filters::-webkit-scrollbar{display:none}.concept-filter{flex:0 0 auto}
       .concept-body{padding:1.2rem}.concept-actions,.concept-actions .button{width:100%}.concept-preview{height:190px}.concept-cover strong{font-size:1.45rem}
       .art{min-height:330px}.browser{right:.8rem;box-shadow:10px 10px 0 var(--yellow),var(--shadow)}.browser-body{padding:1.5rem}.spark{right:0;width:72px;height:72px}
@@ -198,7 +202,14 @@
       <div class="container">
         <div class="heading"><div><p class="eyebrow">What we do</p><h2>Everything your website needs to work harder.</h2></div><p>From strategy and design through hosting and ongoing updates, we handle the details so you can focus on running your business.</p></div>
         <div class="service-paths" aria-label="Website design options"><article class="service-path"><strong>Commissioned custom website</strong><p>Designed from the ground up around your business, customers, content, and visual direction.</p></article><article class="service-path"><strong>Template-based website</strong><p>A faster, budget-conscious starting point that we customize with your branding, content, colors, and goals.</p></article></div>
-        <div class="service-promise"><span aria-hidden="true">100%</span><p><strong>Personal collaboration, not a handoff.</strong> We work directly with every customer, listen carefully, and continue refining the design until everything is 100% correct and the finished website matches what you want.</p></div>
+        <div class="collaboration-panel">
+          <div class="collab-intro"><div><p class="eyebrow">Flexible collaboration</p><h3>Stay supported—or take the reins.</h3></div><p>You choose how we work together after launch. We can remain your website partner or prepare everything for a smooth, confident handoff.</p></div>
+          <div class="collab-options">
+            <article class="collab-option"><span aria-hidden="true">01</span><strong>Ongoing Partnership</strong><p>Keep us involved for updates, guidance, hosting, and continued support as your business grows and your website evolves.</p></article>
+            <article class="collab-option"><span aria-hidden="true">02</span><strong>Complete Handoff</strong><p>Take full ownership of your finished website with an organized transition, clear guidance, and the information you need to move forward.</p></article>
+          </div>
+          <p class="collab-guarantee"><span class="collab-check" aria-hidden="true">✓</span><span><strong>Our promise:</strong> Whichever path you choose, you receive 100% hands-on service throughout the entire project. We listen, collaborate, and refine every detail until you are completely satisfied with the final result.</span></p>
+        </div>
         <div class="services">
           <article class="card service"><span class="number">01</span><h3>Strategy &amp; Content</h3><p>We organize your message around what customers need to understand, trust, and do next.</p><ul class="service-list"><li>Page and content planning</li><li>Customer-focused messaging</li><li>Clear calls to action</li></ul></article>
           <article class="card service"><span class="number">02</span><h3>Custom Web Design</h3><p>A professional visual direction makes your business memorable while keeping every page easy to navigate.</p><ul class="service-list"><li>Brand-matched layouts</li><li>Mobile-first design</li><li>Accessible user experience</li></ul></article>
