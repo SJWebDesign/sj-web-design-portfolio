@@ -405,41 +405,18 @@ h2 {
   font-size: 1.08rem;
 }
 
-.owner-copy::after {
-  display: block;
-  clear: both;
-  content: "";
-}
-
-.owner-portrait {
-  float: right;
-  width: clamp(132px, 18vw, 188px);
-  margin: 0 0 1rem 1.35rem;
-  text-align: center;
-}
-
-.owner-photo {
-  display: block;
-  width: 100%;
-  height: clamp(176px, 24vw, 250px);
-  object-fit: cover;
-  object-position: center top;
-  background: var(--white);
-  border: 2px solid var(--navy);
-  border-radius: 8px;
-  box-shadow: 7px 7px 0 var(--yellow), -5px -5px 0 var(--blue);
-}
-
-.owner-portrait figcaption {
+.owner-copy p.owner-name {
   display: inline-block;
-  margin-top: 0.65rem;
-  padding: 0.12rem 0.35rem;
+  margin: 0 0 1rem;
+  padding: 0.35rem 0.55rem;
   color: var(--navy);
   background: rgba(255, 255, 255, 0.68);
   border-bottom: 3px solid var(--yellow);
-  font-family: "Segoe Print", "Bradley Hand ITC", "Comic Sans MS", cursive;
-  font-size: 0.9rem;
-  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(0.95rem, 1.5vw, 1.12rem);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .pricing-list {
@@ -664,18 +641,6 @@ h2 {
   .command-panel {
     align-self: auto;
     box-shadow: 8px 8px 0 var(--yellow), -5px -5px 0 var(--blue);
-  }
-
-  .owner-portrait {
-    float: none;
-    display: block;
-    width: min(220px, 72vw);
-    margin: 0 0 1.25rem;
-  }
-
-  .owner-photo {
-    height: auto;
-    aspect-ratio: 3 / 4;
   }
 
   .button {

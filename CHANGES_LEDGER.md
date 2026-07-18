@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.16.1-core-brand-color-palette`
+Current version: `v0.16.2-owner-name-only`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,15 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.16.2-owner-name-only - 2026-07-18
+
+- Commit: pending at time of writing
+- Summary: Removed the owner portrait from the public website and kept the owner's name in a professional font treatment.
+- Changed: Replaced the owner portrait figure with a styled `Samantha A. Nielsen` name label, removed the handwritten/cute caption styling, removed owner photo CSS, and removed the owner photo asset from the current site files.
+- Files changed: `index.html`, `style.css`, `assets/owner-photo.jpg`, `CHANGES_LEDGER.md`
+- Deployment: Pending push to `main`.
+- Notes: Owner section copy remains unchanged; the visual owner treatment is now text-only.
 
 ### v0.16.1-core-brand-color-palette - 2026-07-18
 
