@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.13.2-owner-portrait`
+Current version: `v0.13.3-real-competitor-pricing`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,15 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.13.3-real-competitor-pricing - 2026-07-18
+
+- Commit: pending at time of writing
+- Summary: Updated the pricing comparison sheet to compare S&J pricing against a real competitor.
+- Changed: Reworked the comparison table to compare S&J plans against Jottful's published starting price and added a competitor reference note.
+- Files changed: `index.html`, `style.css`, `CHANGES_LEDGER.md`
+- Deployment: Pending push to `main`.
+- Notes: Jottful's published reference was checked July 18, 2026 and listed $99 setup plus co-maintenance starting at $65/month for up to 5 pages.
 
 ### v0.13.2-owner-portrait - 2026-07-18
 
