@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.17.8-prism-fixed-size`
+Current version: `v0.17.9-prism-outline-strength`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,16 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.17.9-prism-outline-strength - 2026-07-18
+
+- Commit: `8613760`
+- Summary: Increased the black outline around the `build / support / grow` letters.
+- Changed: Updated the Prismatic label text stroke from `1.1px` to `1.9px`, preserving the fixed `3.2rem` size and clay fill.
+- Files changed: `index.html`, `CHANGES_LEDGER.md`
+- Deployment: Pushed to `main` in commit `8613760`.
+- Verification: The live homepage returned HTTP `200`; checks confirmed the `1.9px` outline, fixed `3.2rem` size, clay fill, and uploaded brand artwork.
+- Follow-up work or risks: None.
 
 ### v0.17.8-prism-fixed-size - 2026-07-18
 
