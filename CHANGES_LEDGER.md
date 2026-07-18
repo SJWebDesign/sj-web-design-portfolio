@@ -30,11 +30,11 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 
 ### v0.13.0-print-material-services - 2026-07-18
 
-- Commit: pending at time of writing
+- Commit: `8acd1fb`
 - Summary: Added professional brand label, business card, and pamphlet design and printing services.
 - Changed: Updated homepage title and description, added print navigation, revised the hero and services copy, and added a dedicated print materials section.
 - Files changed: `index.html`, `CHANGES_LEDGER.md`
-- Deployment: Pending push to `main`.
+- Deployment: Pushed to `main`; live print services section verified.
 - Notes: Copy was professionally reworded from the user's request to include brand labels, business cards, and pamphlet design and printing.
 
 ### v0.12.0-owner-story-section - 2026-07-17
