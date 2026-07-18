@@ -30,11 +30,11 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 
 ### v0.14.0-service-difference-section - 2026-07-18
 
-- Commit: pending at time of writing
+- Commit: `bca2df0`
 - Summary: Added a deployable-in-24-hours callout and service differentiation section.
 - Changed: Added `Deployable in 24 hours` near the top of the hero, added a `Why S&J` navigation link, and added a section explaining hands-on 24/7 service, direct owner support, and a launch-focused process.
 - Files changed: `index.html`, `style.css`, `CHANGES_LEDGER.md`
-- Deployment: Pending push to `main`.
+- Deployment: Pushed to `main`; live 24-hour callout and service difference section verified.
 - Notes: Requested by the user to explain how S&J is different than competitors and highlight full hands-on 24/7 service.
 
 ### v0.13.5-owner-photo-caption - 2026-07-18
