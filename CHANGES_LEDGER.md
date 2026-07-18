@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.17.1-footer-label-removal`
+Current version: `v0.17.2-brand-label-and-prism-text`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,16 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.17.2-brand-label-and-prism-text - 2026-07-18
+
+- Commit: `f543ca1`
+- Summary: Applied the approved S&J brand label to the prototype header and changed the Prismatic hero words to black.
+- Changed: Preserved the sapphire-blue header background; replaced the triangular header mark with a rounded-square S&J mark featuring a navy border, diagonal daffodil-yellow and light-blue fill, sapphire offset shadow, and navy `Web Design` wordmark on a warm-paper panel. Kept the wordmark visible at the mobile breakpoint and changed `build / support / grow` to black.
+- Files changed: `index.html`, `CHANGES_LEDGER.md`
+- Deployment: Pushed to `main` in commit `f543ca1`.
+- Verification: The live homepage returned HTTP `200`; checks confirmed the blue header, rounded brand mark, sapphire shadow, visible desktop/mobile wordmark, black Prismatic text, removal of the old triangular mark, and continued absence of the footer review label.
+- Follow-up work or risks: None.
 
 ### v0.17.1-footer-label-removal - 2026-07-18
 
