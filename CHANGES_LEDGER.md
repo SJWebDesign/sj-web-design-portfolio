@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.15.1-hero-offers-pricing`
+Current version: `v0.16.0-unique-color-layout-redesign`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,15 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.16.0-unique-color-layout-redesign - 2026-07-18
+
+- Commit: pending at time of writing
+- Summary: Redesigned the full site layout and visual system while preserving the existing website content.
+- Changed: Reworked the CSS for a more colorful, less generic layout with an angled hero treatment, stronger section rhythm, varied card accents, refreshed pricing styling, and updated owner/media presentation.
+- Files changed: `style.css`, `CHANGES_LEDGER.md`
+- Deployment: Pending push to `main`.
+- Notes: Based on the SJDOS uniqueness guidance to avoid a generic template by using distinct color pairing, section rhythm, card styling, and simple interaction details while keeping current text, data, and media unchanged.
 
 ### v0.15.1-hero-offers-pricing - 2026-07-18
 
