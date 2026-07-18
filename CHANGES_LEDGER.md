@@ -30,11 +30,11 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 
 ### v0.16.6-price-tier-update - 2026-07-18
 
-- Commit: pending at time of writing
+- Commit: `186cc94`
 - Summary: Updated the visible website plan prices.
 - Changed: Set the five website plan prices to `$49.99`, `$54.99`, `$59.99`, `$69.99`, and `$79.99`, and updated the related homepage pricing range, highest-plan line, and comparison table price references.
 - Files changed: `index.html`, `CHANGES_LEDGER.md`
-- Deployment: Pending push to `main`.
+- Deployment: Pushed to `main`; live homepage verified with the new five-price sequence and no old S&J `$84.99` or `$99.99` plan pricing.
 - Notes: Price-only update; plan names, section structure, and non-price copy remain unchanged.
 
 ### v0.16.5-difference-section-rewrite - 2026-07-18
