@@ -30,11 +30,11 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 
 ### v0.16.7-internal-seo-update - 2026-07-18
 
-- Commit: pending at time of writing
+- Commit: `84221ec`
 - Summary: Rewrote the homepage internal SEO metadata with a more professional search presentation.
 - Changed: Updated the title and meta description to mention websites from `$49.99/month` and real agent support, then added Open Graph, Twitter summary, and JSON-LD structured data using the same professional positioning.
 - Files changed: `index.html`, `CHANGES_LEDGER.md`
-- Deployment: Pending push to `main`.
+- Deployment: Pushed to `main`; live homepage verified with updated title, meta description, Open Graph, Twitter summary, and JSON-LD structured data.
 - Notes: SEO-only update; visible page content and pricing sections remain unchanged.
 
 ### v0.16.6-price-tier-update - 2026-07-18
