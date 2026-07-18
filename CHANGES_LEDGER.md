@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.17.0-woven-path-prototype-switch`
+Current version: `v0.17.1-footer-label-removal`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,16 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.17.1-footer-label-removal - 2026-07-18
+
+- Commit: `3444f02`
+- Summary: Removed the prototype review label from the bottom of the production homepage.
+- Changed: Removed the footer-generated text `Woven Path review concept` while preserving the footer, site structure, and all other prototype content.
+- Files changed: `index.html`, `CHANGES_LEDGER.md`
+- Deployment: Pushed to `main` in commit `3444f02`.
+- Verification: The live homepage returned HTTP `200`; the removed phrase was absent and the footer remained present.
+- Follow-up work or risks: None.
 
 ### v0.17.0-woven-path-prototype-switch - 2026-07-18
 
