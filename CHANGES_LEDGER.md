@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.11.2-footer-copyright`
+Current version: `v0.12.0-owner-story-section`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,15 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.12.0-owner-story-section - 2026-07-17
+
+- Commit: pending at time of writing
+- Summary: Added an About the Owner section with a small business owner story and portrait space.
+- Changed: Added a homepage owner section, added a reserved portrait area for a future owner image, added owner navigation, and styled the section for desktop and mobile layouts.
+- Files changed: `index.html`, `style.css`, `CHANGES_LEDGER.md`
+- Deployment: Pending push to `main`.
+- Notes: Copy is intentionally professional and nonspecific so it can work before a final personal bio is written.
 
 ### v0.11.2-footer-copyright - 2026-07-17
 
