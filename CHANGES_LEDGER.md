@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.17.12-prism-white-size-30`
+Current version: `v0.17.13-new-drive-brand-label`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,16 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.17.13-new-drive-brand-label - 2026-07-18
+
+- Commits: `e8b174c`, `29efe6a`
+- Summary: Switched the top header brand label to the new PNG supplied through Google Drive.
+- Changed: Added `CB34F9D9-675C-48F5-BFD2-6280C34F6EFD.PNG` as `assets/sj-web-design-brand-2026.png`, replaced the previous JPEG brand reference, and presented the navy artwork in a responsive `3.2:1` cropped frame with centered cover fitting, a subtle light border, rounded corners, and refined shadow. Preserved the blue header and current Prismatic text styling.
+- Files changed: `assets/sj-web-design-brand-2026.png`, `index.html`, `CHANGES_LEDGER.md`
+- Deployment: Added the PNG in commit `e8b174c` and connected it to the header in commit `29efe6a`; both were pushed to `main`.
+- Verification: GitHub `main` contains only the new brand image reference and crop styling. The production PNG returned HTTP `200` as `image/png`; the homepage HTML cache was still serving the previous brand reference during the initial deployment window.
+- Follow-up work or risks: Complete a final live homepage readback after the production HTML cache refreshes. The source PNG is approximately 975 KB.
 
 ### v0.17.12-prism-white-size-30 - 2026-07-18
 
