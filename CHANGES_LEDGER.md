@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.12.0-owner-story-section`
+Current version: `v0.13.0-print-material-services`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,15 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.13.0-print-material-services - 2026-07-18
+
+- Commit: pending at time of writing
+- Summary: Added professional brand label, business card, and pamphlet design and printing services.
+- Changed: Updated homepage title and description, added print navigation, revised the hero and services copy, and added a dedicated print materials section.
+- Files changed: `index.html`, `CHANGES_LEDGER.md`
+- Deployment: Pending push to `main`.
+- Notes: Copy was professionally reworded from the user's request to include brand labels, business cards, and pamphlet design and printing.
 
 ### v0.12.0-owner-story-section - 2026-07-17
 
