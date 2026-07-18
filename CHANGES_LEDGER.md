@@ -30,11 +30,11 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 
 ### v0.12.0-owner-story-section - 2026-07-17
 
-- Commit: pending at time of writing
+- Commit: `c040bde`
 - Summary: Added an About the Owner section with a small business owner story and portrait space.
 - Changed: Added a homepage owner section, added a reserved portrait area for a future owner image, added owner navigation, and styled the section for desktop and mobile layouts.
 - Files changed: `index.html`, `style.css`, `CHANGES_LEDGER.md`
-- Deployment: Pending push to `main`.
+- Deployment: Pushed to `main`; live owner section and portrait placeholder verified.
 - Notes: Copy is intentionally professional and nonspecific so it can work before a final personal bio is written.
 
 ### v0.11.2-footer-copyright - 2026-07-17
