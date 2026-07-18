@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.17.2-brand-label-and-prism-text`
+Current version: `v0.17.3-uploaded-brand-artwork`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,16 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.17.3-uploaded-brand-artwork - 2026-07-18
+
+- Commits: `de43aa3`, `2fa6bda`
+- Summary: Replaced the CSS-built header label with the approved S&J artwork uploaded through Google Drive.
+- Changed: Added `IMG_5105.jpg` as the optimized website asset `assets/sj-web-design-brand.jpg`, placed the actual S&J wordmark in the top header, added professional responsive sizing, rounded clipping, subtle depth, hover refinement, intrinsic dimensions, and descriptive alternative text. Preserved the sapphire-blue header background.
+- Files changed: `assets/sj-web-design-brand.jpg`, `index.html`, `CHANGES_LEDGER.md`
+- Deployment: Added the artwork in commit `de43aa3` and connected it to the homepage in commit `2fa6bda`; both were pushed to `main`.
+- Verification: The live homepage and brand asset returned HTTP `200`. Checks confirmed the uploaded logo reference, alternative text, mobile sizing, blue header, black Prismatic text, and continued absence of the footer review label.
+- Follow-up work or risks: The source artwork is a JPEG with a white background, intentionally presented as a clean label panel against the blue header.
 
 ### v0.17.2-brand-label-and-prism-text - 2026-07-18
 
