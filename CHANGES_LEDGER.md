@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.17.6-prism-emphasis`
+Current version: `v0.17.7-prism-max-size`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,16 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.17.7-prism-max-size - 2026-07-18
+
+- Commit: `f7a7fa8`
+- Summary: Increased the maximum responsive size of the `build / support / grow` text.
+- Changed: Updated the Prismatic label font clamp from a `2.9rem` maximum to `3.2rem`, preserving the `1.7rem` minimum, `3.3vw` responsive scale, clay fill, and `1.1px` black outline.
+- Files changed: `index.html`, `CHANGES_LEDGER.md`
+- Deployment: Pushed to `main` in commit `f7a7fa8`.
+- Verification: The live homepage returned HTTP `200`; checks confirmed the `3.2rem` maximum, preserved outline and fill colors, and uploaded brand artwork.
+- Follow-up work or risks: None.
 
 ### v0.17.6-prism-emphasis - 2026-07-18
 
