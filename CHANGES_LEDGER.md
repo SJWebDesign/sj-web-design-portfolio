@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.17.9-prism-outline-strength`
+Current version: `v0.17.10-prism-fixed-size-27`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,16 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.17.10-prism-fixed-size-27 - 2026-07-18
+
+- Commit: `07d0e66`
+- Summary: Reduced the fixed size of the `build / support / grow` text from `3.2rem` to `2.7rem`.
+- Changed: Updated both the minimum and maximum values in the Prismatic label font clamp to `2.7rem`, preserving the clay fill and `1.9px` black outline.
+- Files changed: `index.html`, `CHANGES_LEDGER.md`
+- Deployment: Pushed to `main` in commit `07d0e66`.
+- Verification: The live homepage returned HTTP `200`; checks confirmed the fixed `2.7rem` size, `1.9px` outline, clay fill, and uploaded brand artwork.
+- Follow-up work or risks: None.
 
 ### v0.17.9-prism-outline-strength - 2026-07-18
 
