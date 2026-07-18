@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.16.7-internal-seo-update`
+Current version: `v0.17.0-woven-path-prototype-switch`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,16 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.17.0-woven-path-prototype-switch - 2026-07-18
+
+- Commit: `7ebde27`
+- Summary: Replaced the production homepage design with the approved Triangle Studio prototype.
+- Changed: Switched the homepage to the abstract Boho-elegant Woven Path direction with a restrained Prismatic hero, sapphire thread progression, organic editorial cards, intentional mobile milestone layout, responsive pricing disclosures, keyboard focus states, reduced-motion support, and embedded CSS and JavaScript. Preserved the existing S&J names, services, pricing, competitor comparison, owner story, contact information, SEO metadata, canonical URL, and JSON-LD.
+- Files changed: `index.html`, `CHANGES_LEDGER.md`
+- Deployment: Pushed to `main` in commit `7ebde27`; Cloudflare production returned HTTP `200` with the approved prototype.
+- Verification: Local checks confirmed one H1, all required section anchors, all five prices, valid JSON-LD, reduced-motion support, and the iPhone breakpoint. Live checks confirmed the Woven Path marker, Prismatic hero, sapphire thread, all five prices, SEO title, and the newer footer wording without `LLC`.
+- Follow-up work or risks: `style.css` remains in the repository as an unused legacy stylesheet because the approved prototype is self-contained. The prototype uses Google Fonts with system-font fallbacks if the external font request is unavailable.
 
 ### v0.16.7-internal-seo-update - 2026-07-18
 
