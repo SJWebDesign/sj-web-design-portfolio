@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.17.10-prism-fixed-size-27`
+Current version: `v0.17.11-prism-sapphire-bright`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,16 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.17.11-prism-sapphire-bright - 2026-07-18
+
+- Commit: `3e5b749`
+- Summary: Changed the `build / support / grow` text fill from clay to bright sapphire.
+- Changed: Replaced the Prismatic label fill color with the requested `#2f73d8`, preserving the fixed `2.7rem` size and `1.9px` black outline.
+- Files changed: `index.html`, `CHANGES_LEDGER.md`
+- Deployment: Pushed to `main` in commit `3e5b749`.
+- Verification: The live homepage returned HTTP `200`; checks confirmed the bright sapphire `#2f73d8` fill, fixed `2.7rem` size, `1.9px` black outline, and uploaded brand artwork.
+- Follow-up work or risks: None.
 
 ### v0.17.10-prism-fixed-size-27 - 2026-07-18
 
