@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.17.7-prism-max-size`
+Current version: `v0.17.8-prism-fixed-size`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,16 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.17.8-prism-fixed-size - 2026-07-18
+
+- Commit: `4a0704c`
+- Summary: Set the minimum size of the `build / support / grow` text to `3.2rem`.
+- Changed: Updated the Prismatic label font clamp from a `1.7rem` minimum to `3.2rem`. Because the maximum is also `3.2rem`, the words now remain at a fixed `3.2rem` size across viewport widths. Preserved the clay fill and `1.1px` black outline.
+- Files changed: `index.html`, `CHANGES_LEDGER.md`
+- Deployment: Pushed to `main` in commit `4a0704c`.
+- Verification: The live homepage returned HTTP `200`; checks confirmed the `3.2rem` minimum and maximum, preserved outline and fill colors, and uploaded brand artwork.
+- Follow-up work or risks: The fixed `3.2rem` size is intentionally no longer responsive and may occupy more space on narrow screens.
 
 ### v0.17.7-prism-max-size - 2026-07-18
 
