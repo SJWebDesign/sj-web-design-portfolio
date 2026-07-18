@@ -140,6 +140,20 @@ h2 {
   font-weight: 800;
 }
 
+.delivery-badge {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 1rem;
+  padding: 0.45rem 0.7rem;
+  color: var(--navy);
+  background: var(--yellow);
+  border: 2px solid var(--navy);
+  border-radius: 8px;
+  box-shadow: 4px 4px 0 var(--blue);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
 .button {
   width: fit-content;
   min-height: 48px;

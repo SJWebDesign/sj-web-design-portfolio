@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.13.5-owner-photo-caption`
+Current version: `v0.14.0-service-difference-section`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,15 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.14.0-service-difference-section - 2026-07-18
+
+- Commit: pending at time of writing
+- Summary: Added a deployable-in-24-hours callout and service differentiation section.
+- Changed: Added `Deployable in 24 hours` near the top of the hero, added a `Why S&J` navigation link, and added a section explaining hands-on 24/7 service, direct owner support, and a launch-focused process.
+- Files changed: `index.html`, `style.css`, `CHANGES_LEDGER.md`
+- Deployment: Pending push to `main`.
+- Notes: Requested by the user to explain how S&J is different than competitors and highlight full hands-on 24/7 service.
 
 ### v0.13.5-owner-photo-caption - 2026-07-18
 
