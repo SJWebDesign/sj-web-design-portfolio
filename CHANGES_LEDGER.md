@@ -30,11 +30,11 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 
 ### v0.13.1-market-friendly-pricing - 2026-07-18
 
-- Commit: pending at time of writing
+- Commit: `52bd07a`
 - Summary: Reworded website pricing around being below typical market rates.
 - Changed: Updated title, meta description, pricing snapshot, services card, pricing section, pricing dropdowns, and comparison table to communicate market-friendly pricing.
 - Files changed: `index.html`, `style.css`, `CHANGES_LEDGER.md`
-- Deployment: Pending push to `main`.
+- Deployment: Pushed to `main`; live market-friendly pricing language verified.
 - Notes: User requested pricing language that communicates lower-than-market pricing; visible copy uses professional wording instead of informal wording.
 
 ### v0.13.0-print-material-services - 2026-07-18
