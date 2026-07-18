@@ -213,6 +213,27 @@ h2 {
   font-weight: 900;
 }
 
+.partner-note {
+  display: inline-flex;
+  width: fit-content;
+  margin: 0 0 1rem;
+  padding: 0.42rem 0.68rem;
+  color: var(--navy);
+  background: var(--blue-soft);
+  border: 2px solid var(--blue);
+  border-radius: 8px;
+  box-shadow: 4px 4px 0 var(--yellow);
+  font-size: 0.96rem;
+  font-weight: 900;
+}
+
+.contact .partner-note {
+  color: var(--navy);
+  background: var(--yellow);
+  border-color: var(--yellow);
+  box-shadow: 4px 4px 0 var(--blue);
+}
+
 .button {
   width: fit-content;
   min-height: 48px;

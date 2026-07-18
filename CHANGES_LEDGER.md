@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.16.3-contact-email-update`
+Current version: `v0.16.4-monthly-partner-message`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,15 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.16.4-monthly-partner-message - 2026-07-18
+
+- Commit: pending at time of writing
+- Summary: Added a professional monthly partner message in three spaced-out areas of the homepage.
+- Changed: Added `A real website partner, at one monthly price.` to the hero, pricing, and contact sections, with a reusable styled note treatment.
+- Files changed: `index.html`, `style.css`, `CHANGES_LEDGER.md`
+- Deployment: Pending push to `main`.
+- Notes: Reworded the requested agent phrasing to fit the site's professional service positioning.
 
 ### v0.16.3-contact-email-update - 2026-07-18
 
