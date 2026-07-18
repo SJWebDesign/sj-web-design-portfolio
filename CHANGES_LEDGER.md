@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.16.2-owner-name-only`
+Current version: `v0.16.3-contact-email-update`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,15 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.16.3-contact-email-update - 2026-07-18
+
+- Commit: pending at time of writing
+- Summary: Updated the public homepage contact email address.
+- Changed: Replaced the homepage contact email and mailto link with `s.j.webdesign.contact@gmail.com`.
+- Files changed: `index.html`, `CHANGES_LEDGER.md`
+- Deployment: Pending push to `main`.
+- Notes: Concept demo mailto links already used the requested Gmail contact address.
 
 ### v0.16.2-owner-name-only - 2026-07-18
 
