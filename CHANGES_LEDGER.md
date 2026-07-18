@@ -30,11 +30,11 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 
 ### v0.13.5-owner-photo-caption - 2026-07-18
 
-- Commit: pending at time of writing
+- Commit: `0da32ba`
 - Summary: Added a name caption under the owner portrait.
 - Changed: Converted the owner photo to a floated figure and added `Samantha A. Nielsen` in a small handwritten-style caption under the image.
 - Files changed: `index.html`, `style.css`, `CHANGES_LEDGER.md`
-- Deployment: Pending push to `main`.
+- Deployment: Pushed to `main`; live owner portrait caption verified.
 - Notes: Keeps the owner portrait in the top-right wrap layout while adding a small personal name label.
 
 ### v0.13.4-hero-small-business-copy - 2026-07-18
