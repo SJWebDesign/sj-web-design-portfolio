@@ -30,11 +30,11 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 
 ### v0.13.2-owner-portrait - 2026-07-18
 
-- Commit: pending at time of writing
+- Commit: `bbf33b8`
 - Summary: Added the owner's portrait to the About the Owner section.
 - Changed: Added `assets/owner-photo.jpg`, replaced the empty portrait placeholder with a small top-right owner photo, and styled text to wrap around the photo on desktop while stacking cleanly on mobile.
 - Files changed: `index.html`, `style.css`, `assets/owner-photo.jpg`, `CHANGES_LEDGER.md`
-- Deployment: Pending push to `main`.
+- Deployment: Pushed to `main`; live owner photo and image asset verified.
 - Notes: Photo is kept as a repo asset and used only in the owner section.
 
 ### v0.13.1-market-friendly-pricing - 2026-07-18
