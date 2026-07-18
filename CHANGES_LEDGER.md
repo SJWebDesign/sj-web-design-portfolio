@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.17.11-prism-sapphire-bright`
+Current version: `v0.17.12-prism-white-size-30`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,16 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.17.12-prism-white-size-30 - 2026-07-18
+
+- Commit: `3cd28c6`
+- Summary: Changed the `build / support / grow` text to white and set it to a fixed `3.0rem` size.
+- Changed: Replaced the bright sapphire `#2f73d8` fill with white `#fff` and updated both the minimum and maximum font clamp values from `2.7rem` to `3rem`. Preserved the `1.9px` black outline.
+- Files changed: `index.html`, `CHANGES_LEDGER.md`
+- Deployment: Pushed to `main` in commit `3cd28c6`.
+- Verification: The live homepage returned HTTP `200`; checks confirmed the white fill, fixed `3.0rem` size, `1.9px` black outline, uploaded brand artwork, and continued absence of the footer review label.
+- Follow-up work or risks: None.
 
 ### v0.17.11-prism-sapphire-bright - 2026-07-18
 
