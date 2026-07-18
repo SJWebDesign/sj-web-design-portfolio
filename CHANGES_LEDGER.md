@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.13.3-real-competitor-pricing`
+Current version: `v0.13.4-hero-small-business-copy`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,15 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.13.4-hero-small-business-copy - 2026-07-18
+
+- Commit: pending at time of writing
+- Summary: Updated the hero headline and support copy.
+- Changed: Rewrote the hero H1 to a cleaner modern message, added the line `A small business for small businesses.`, and slightly reduced the H1 size.
+- Files changed: `index.html`, `style.css`, `CHANGES_LEDGER.md`
+- Deployment: Pending push to `main`.
+- Notes: Requested to make the main header more professional and modern.
 
 ### v0.13.3-real-competitor-pricing - 2026-07-18
 
