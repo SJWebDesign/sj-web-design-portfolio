@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.17.3-uploaded-brand-artwork`
+Current version: `v0.17.4-prism-text-color-match`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,16 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.17.4-prism-text-color-match - 2026-07-18
+
+- Commit: `330d478`
+- Summary: Matched the `build / support / grow` text color to the homepage small-business tagline.
+- Changed: Replaced the Prismatic hero label color from pure black to the same `var(--clay)` brand color used by `A small business for small businesses.`
+- Files changed: `index.html`, `CHANGES_LEDGER.md`
+- Deployment: Pushed to `main` in commit `330d478`.
+- Verification: The live homepage returned HTTP `200`; both the Prismatic labels and small-business tagline use `var(--clay)`. The uploaded brand artwork remains present and the footer review label remains absent.
+- Follow-up work or risks: None.
 
 ### v0.17.3-uploaded-brand-artwork - 2026-07-18
 
