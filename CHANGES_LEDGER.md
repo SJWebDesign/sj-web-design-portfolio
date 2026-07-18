@@ -30,11 +30,11 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 
 ### v0.16.5-difference-section-rewrite - 2026-07-18
 
-- Commit: pending at time of writing
+- Commit: `65ecf29`
 - Summary: Revamped the `How we're different` section copy around real hands-on monthly support.
 - Changed: Reworded the section headline, intro, and original three topic cards for 24/7 service access, direct owner support, and launch-focused process, then added a monthly-model note explaining predictable cost, faster communication, and support from someone who already knows the site.
 - Files changed: `index.html`, `style.css`, `CHANGES_LEDGER.md`
-- Deployment: Pending push to `main`.
+- Deployment: Pushed to `main`; live homepage verified with the rewritten difference section, original three topics, and monthly partner note.
 - Notes: Kept the original section topics while adding the benefit of a real website partner at one monthly price.
 
 ### v0.16.4-monthly-partner-message - 2026-07-18
