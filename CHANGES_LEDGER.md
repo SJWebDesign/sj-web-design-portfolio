@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.17.13-new-drive-brand-label`
+Current version: `v0.17.14-code-native-brand-label`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,16 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.17.14-code-native-brand-label - 2026-07-18
+
+- Commits: `8d96911`, `1e530f9`
+- Summary: Replaced the pending PNG header artwork with a fully code-native S&J brand label.
+- Changed: Built the header brand directly in HTML and CSS using a navy gradient panel, white `Web Design` wordmark, and a rounded S&J mark with a diagonal daffodil-yellow and light-blue split. Added responsive mobile sizing and preserved the existing blue header, white `3rem` Prismatic text, and `1.9px` black outline. Removed the unused `assets/sj-web-design-brand-2026.png` file from the current repository tree.
+- Files changed: `index.html`, `assets/sj-web-design-brand-2026.png`, `CHANGES_LEDGER.md`
+- Deployment: Code implementation was pushed to `main` in commit `8d96911`; the unused PNG was removed in commit `1e530f9`.
+- Verification: GitHub `main` contains the code-native brand markup and styles with no PNG brand reference. Cloudflare stopped creating new automatic build checks after the earlier failed homepage build, so the live production homepage still requires a manual deployment retry.
+- Follow-up work or risks: Retry the production deployment from the authenticated Cloudflare Workers Builds dashboard, then verify the code-native logo on desktop and mobile.
 
 ### v0.17.13-new-drive-brand-label - 2026-07-18
 
