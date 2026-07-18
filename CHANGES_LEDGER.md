@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.17.4-prism-text-color-match`
+Current version: `v0.17.5-prism-black-outline`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,16 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.17.5-prism-black-outline - 2026-07-18
+
+- Commit: `0df439a`
+- Summary: Added a thin black outline to the `build / support / grow` text.
+- Changed: Preserved the clay fill color and added a subtle `.55px` black stroke around each letter with stroke-first paint ordering.
+- Files changed: `index.html`, `CHANGES_LEDGER.md`
+- Deployment: Pushed to `main` in commit `0df439a`.
+- Verification: The live homepage returned HTTP `200`; checks confirmed the clay fill, thin black outline, uploaded brand artwork, and continued absence of the footer review label.
+- Follow-up work or risks: None.
 
 ### v0.17.4-prism-text-color-match - 2026-07-18
 
