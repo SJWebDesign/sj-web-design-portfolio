@@ -259,17 +259,31 @@ h2 {
   content: "";
 }
 
-.owner-photo {
+.owner-portrait {
   float: right;
   width: clamp(128px, 18vw, 180px);
-  height: clamp(168px, 24vw, 240px);
   margin: 0 0 1rem 1.25rem;
+  text-align: center;
+}
+
+.owner-photo {
+  display: block;
+  width: 100%;
+  height: clamp(168px, 24vw, 240px);
   object-fit: cover;
   object-position: center top;
   background: var(--white);
   border: 2px solid var(--navy);
   border-radius: 8px;
   box-shadow: 6px 6px 0 var(--yellow);
+}
+
+.owner-portrait figcaption {
+  margin-top: 0.65rem;
+  color: var(--navy);
+  font-family: "Segoe Print", "Bradley Hand ITC", "Comic Sans MS", cursive;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 .pricing-list {
@@ -433,13 +447,16 @@ h2 {
     grid-template-columns: 1fr;
   }
 
-  .owner-photo {
+  .owner-portrait {
     float: none;
     display: block;
     width: min(220px, 72vw);
+    margin: 0 0 1.25rem;
+  }
+
+  .owner-photo {
     height: auto;
     aspect-ratio: 3 / 4;
-    margin: 0 0 1.25rem;
   }
 
   .hero {
