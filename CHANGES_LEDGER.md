@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.13.0-print-material-services`
+Current version: `v0.13.1-market-friendly-pricing`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,15 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.13.1-market-friendly-pricing - 2026-07-18
+
+- Commit: pending at time of writing
+- Summary: Reworded website pricing around being below typical market rates.
+- Changed: Updated title, meta description, pricing snapshot, services card, pricing section, pricing dropdowns, and comparison table to communicate market-friendly pricing.
+- Files changed: `index.html`, `style.css`, `CHANGES_LEDGER.md`
+- Deployment: Pending push to `main`.
+- Notes: User requested pricing language that communicates lower-than-market pricing; visible copy uses professional wording instead of informal wording.
 
 ### v0.13.0-print-material-services - 2026-07-18
 
