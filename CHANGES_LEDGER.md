@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.14.0-service-difference-section`
+Current version: `v0.15.0-social-media-services`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,15 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.15.0-social-media-services - 2026-07-18
+
+- Commit: pending at time of writing
+- Summary: Added social media services to the website offering.
+- Changed: Updated meta description, hero copy, pricing snapshot wording, services grid, and responsive card layout to include professional social media support.
+- Files changed: `index.html`, `style.css`, `CHANGES_LEDGER.md`
+- Deployment: Pending push to `main`.
+- Notes: User requested social media services to be added in a professional way.
 
 ### v0.14.0-service-difference-section - 2026-07-18
 
