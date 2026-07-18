@@ -1,14 +1,13 @@
 :root {
   --blue: #0f52ba;
+  --blue-bright: #2f73d8;
+  --blue-soft: #dbeafe;
+  --blue-wash: #edf5ff;
   --navy: #071f45;
   --yellow: #f4d03f;
-  --coral: #ff6f61;
-  --teal: #0f9f9a;
-  --violet: #7c3aed;
-  --mint: #dff8ee;
-  --sky: #eaf4ff;
-  --peach: #fff0e8;
-  --lavender: #f0ebff;
+  --yellow-deep: #c99b00;
+  --yellow-soft: #fff2a8;
+  --yellow-wash: #fff9db;
   --ink: #14213d;
   --muted: #58687a;
   --paper: #fffdf6;
@@ -31,7 +30,7 @@ body {
   background:
     linear-gradient(90deg, rgba(15, 82, 186, 0.055) 1px, transparent 1px),
     linear-gradient(180deg, rgba(7, 31, 69, 0.045) 1px, transparent 1px),
-    linear-gradient(180deg, #fffdf6 0%, #f6fbff 42%, #fff7ee 100%);
+    linear-gradient(180deg, var(--paper) 0%, var(--blue-wash) 42%, var(--yellow-wash) 100%);
   background-size: 44px 44px, 44px 44px, auto;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
@@ -78,10 +77,10 @@ a {
   place-items: center;
   color: var(--navy);
   background:
-    linear-gradient(135deg, var(--yellow) 0 49%, var(--coral) 50% 100%);
+    linear-gradient(135deg, var(--yellow) 0 49%, var(--blue-soft) 50% 100%);
   border: 2px solid var(--navy);
   border-radius: 8px;
-  box-shadow: 4px 4px 0 var(--teal);
+  box-shadow: 4px 4px 0 var(--blue);
   font-size: 0.85rem;
 }
 
@@ -100,7 +99,7 @@ a {
 
 .nav a:hover,
 .nav a:focus-visible {
-  border-color: var(--coral);
+  border-color: var(--yellow);
   outline: 0;
 }
 
@@ -136,7 +135,7 @@ main {
   width: 46vw;
   min-width: 420px;
   background:
-    linear-gradient(135deg, rgba(244, 208, 63, 0.85) 0 24%, transparent 24% 32%, rgba(255, 111, 97, 0.82) 32% 56%, transparent 56% 64%, rgba(15, 159, 154, 0.72) 64% 100%);
+    linear-gradient(135deg, rgba(244, 208, 63, 0.9) 0 24%, transparent 24% 32%, rgba(15, 82, 186, 0.82) 32% 56%, transparent 56% 64%, rgba(244, 208, 63, 0.58) 64% 100%);
   border: 2px solid rgba(7, 31, 69, 0.18);
   content: "";
   transform: skewX(-8deg);
@@ -190,7 +189,7 @@ h2 {
 
 .hero-copy > p:last-of-type {
   padding-left: 1rem;
-  border-left: 5px solid var(--teal);
+  border-left: 5px solid var(--blue);
 }
 
 .hero-tagline {
@@ -209,7 +208,7 @@ h2 {
   background: var(--yellow);
   border: 2px solid var(--navy);
   border-radius: 8px;
-  box-shadow: 4px 4px 0 var(--coral);
+  box-shadow: 4px 4px 0 var(--blue);
   font-size: 0.95rem;
   font-weight: 900;
 }
@@ -224,7 +223,7 @@ h2 {
   background: var(--navy);
   border: 2px solid var(--navy);
   border-radius: 8px;
-  box-shadow: 5px 5px 0 var(--coral);
+  box-shadow: 5px 5px 0 var(--yellow);
   font-weight: 900;
   text-decoration: none;
 }
@@ -239,7 +238,7 @@ h2 {
 .button-light {
   color: var(--navy);
   background: var(--yellow);
-  box-shadow: 5px 5px 0 var(--coral);
+  box-shadow: 5px 5px 0 var(--blue);
 }
 
 .command-panel {
@@ -251,7 +250,7 @@ h2 {
     var(--navy);
   border: 2px solid var(--navy);
   border-radius: 8px;
-  box-shadow: 12px 12px 0 var(--yellow), -8px -8px 0 var(--teal);
+  box-shadow: 12px 12px 0 var(--yellow), -8px -8px 0 var(--blue);
 }
 
 .command-panel p {
@@ -265,11 +264,11 @@ h2 {
 }
 
 .command-panel p:nth-child(2) {
-  background: rgba(15, 159, 154, 0.18);
+  background: rgba(15, 82, 186, 0.28);
 }
 
 .command-panel p:nth-child(3) {
-  background: rgba(255, 111, 97, 0.16);
+  background: rgba(244, 208, 63, 0.14);
 }
 
 .command-panel p:last-child {
@@ -288,8 +287,8 @@ h2 {
 }
 
 .section:nth-of-type(2) {
-  background: var(--sky);
-  box-shadow: 0 0 0 100vmax var(--sky);
+  background: var(--blue-soft);
+  box-shadow: 0 0 0 100vmax var(--blue-soft);
   clip-path: inset(0 -100vmax);
 }
 
@@ -298,26 +297,26 @@ h2 {
 }
 
 .section:nth-of-type(4) {
-  background: var(--peach);
-  box-shadow: 0 0 0 100vmax var(--peach);
+  background: var(--yellow-wash);
+  box-shadow: 0 0 0 100vmax var(--yellow-wash);
   clip-path: inset(0 -100vmax);
 }
 
 .section:nth-of-type(5) {
-  background: var(--mint);
-  box-shadow: 0 0 0 100vmax var(--mint);
+  background: var(--blue-wash);
+  box-shadow: 0 0 0 100vmax var(--blue-wash);
   clip-path: inset(0 -100vmax);
 }
 
 .section:nth-of-type(6) {
-  background: var(--lavender);
-  box-shadow: 0 0 0 100vmax var(--lavender);
+  background: var(--yellow-soft);
+  box-shadow: 0 0 0 100vmax var(--yellow-soft);
   clip-path: inset(0 -100vmax);
 }
 
 .section:nth-of-type(7) {
-  background: #fff7d9;
-  box-shadow: 0 0 0 100vmax #fff7d9;
+  background: var(--yellow-wash);
+  box-shadow: 0 0 0 100vmax var(--yellow-wash);
   clip-path: inset(0 -100vmax);
 }
 
@@ -347,15 +346,15 @@ h2 {
 }
 
 .card:nth-child(2n) {
-  --accent: var(--coral);
+  --accent: var(--yellow-deep);
 }
 
 .card:nth-child(3n) {
-  --accent: var(--teal);
+  --accent: var(--blue-bright);
 }
 
 .card:nth-child(4n) {
-  --accent: var(--violet);
+  --accent: var(--yellow);
 }
 
 .card-number {
@@ -390,7 +389,7 @@ h2 {
 
 .split > div {
   padding-left: 1rem;
-  border-left: 7px solid var(--coral);
+  border-left: 7px solid var(--yellow);
 }
 
 .owner-section {
@@ -428,7 +427,7 @@ h2 {
   background: var(--white);
   border: 2px solid var(--navy);
   border-radius: 8px;
-  box-shadow: 7px 7px 0 var(--yellow), -5px -5px 0 var(--teal);
+  box-shadow: 7px 7px 0 var(--yellow), -5px -5px 0 var(--blue);
 }
 
 .owner-portrait figcaption {
@@ -437,7 +436,7 @@ h2 {
   padding: 0.12rem 0.35rem;
   color: var(--navy);
   background: rgba(255, 255, 255, 0.68);
-  border-bottom: 3px solid var(--coral);
+  border-bottom: 3px solid var(--yellow);
   font-family: "Segoe Print", "Bradley Hand ITC", "Comic Sans MS", cursive;
   font-size: 0.9rem;
   font-weight: 700;
@@ -459,15 +458,15 @@ h2 {
 }
 
 .price-tier:nth-child(2) {
-  --accent: var(--teal);
+  --accent: var(--yellow-deep);
 }
 
 .price-tier:nth-child(3) {
-  --accent: var(--coral);
+  --accent: var(--blue-bright);
 }
 
 .price-tier:nth-child(4) {
-  --accent: var(--violet);
+  --accent: var(--navy);
 }
 
 .price-tier:nth-child(5) {
@@ -527,7 +526,7 @@ h2 {
   overflow-x: auto;
   background: var(--white);
   border: 1px solid var(--line);
-  border-top: 7px solid var(--coral);
+  border-top: 7px solid var(--yellow);
   border-radius: 8px;
   box-shadow: 0 12px 0 rgba(7, 31, 69, 0.08);
 }
@@ -541,7 +540,7 @@ h2 {
 .comparison-table caption {
   padding: 1rem;
   color: var(--navy);
-  background: linear-gradient(90deg, rgba(244, 208, 63, 0.34), rgba(15, 159, 154, 0.16));
+  background: linear-gradient(90deg, rgba(244, 208, 63, 0.38), rgba(15, 82, 186, 0.16));
   font-size: 1.1rem;
   font-weight: 900;
   text-align: left;
@@ -596,7 +595,7 @@ h2 {
   width: min(360px, 70vw);
   height: 8px;
   margin-bottom: 2rem;
-  background: linear-gradient(90deg, var(--yellow), var(--coral), var(--teal));
+  background: linear-gradient(90deg, var(--yellow), var(--blue), var(--yellow));
   content: "";
 }
 
@@ -664,7 +663,7 @@ h2 {
 
   .command-panel {
     align-self: auto;
-    box-shadow: 8px 8px 0 var(--yellow), -5px -5px 0 var(--teal);
+    box-shadow: 8px 8px 0 var(--yellow), -5px -5px 0 var(--blue);
   }
 
   .owner-portrait {

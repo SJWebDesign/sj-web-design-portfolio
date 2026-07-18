@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.16.0-unique-color-layout-redesign`
+Current version: `v0.16.1-core-brand-color-palette`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,15 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.16.1-core-brand-color-palette - 2026-07-18
+
+- Commit: pending at time of writing
+- Summary: Adjusted the redesigned layout to use only the S&J core brand colors.
+- Changed: Removed the extra coral, teal, violet, mint, peach, and lavender styling from the redesign and replaced it with sapphire blue, daffodil yellow, and related blue/yellow tints for section backgrounds, accents, shadows, cards, pricing rows, and buttons.
+- Files changed: `style.css`, `CHANGES_LEDGER.md`
+- Deployment: Pending push to `main`.
+- Notes: Keeps the more colorful layout direction while aligning the palette with the canonical S&J colors.
 
 ### v0.16.0-unique-color-layout-redesign - 2026-07-18
 
