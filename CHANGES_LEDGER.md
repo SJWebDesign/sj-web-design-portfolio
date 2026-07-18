@@ -30,11 +30,11 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 
 ### v0.13.4-hero-small-business-copy - 2026-07-18
 
-- Commit: pending at time of writing
+- Commit: `2ba51ff`
 - Summary: Updated the hero headline and support copy.
 - Changed: Rewrote the hero H1 to a cleaner modern message, added the line `A small business for small businesses.`, and slightly reduced the H1 size.
 - Files changed: `index.html`, `style.css`, `CHANGES_LEDGER.md`
-- Deployment: Pending push to `main`.
+- Deployment: Pushed to `main`; live hero headline and support line verified.
 - Notes: Requested to make the main header more professional and modern.
 
 ### v0.13.3-real-competitor-pricing - 2026-07-18
