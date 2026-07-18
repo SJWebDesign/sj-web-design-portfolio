@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.16.6-price-tier-update`
+Current version: `v0.16.7-internal-seo-update`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,15 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.16.7-internal-seo-update - 2026-07-18
+
+- Commit: pending at time of writing
+- Summary: Rewrote the homepage internal SEO metadata with a more professional search presentation.
+- Changed: Updated the title and meta description to mention websites from `$49.99/month` and real agent support, then added Open Graph, Twitter summary, and JSON-LD structured data using the same professional positioning.
+- Files changed: `index.html`, `CHANGES_LEDGER.md`
+- Deployment: Pending push to `main`.
+- Notes: SEO-only update; visible page content and pricing sections remain unchanged.
 
 ### v0.16.6-price-tier-update - 2026-07-18
 
