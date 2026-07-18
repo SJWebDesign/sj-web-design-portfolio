@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.17.5-prism-black-outline`
+Current version: `v0.17.6-prism-emphasis`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,16 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.17.6-prism-emphasis - 2026-07-18
+
+- Commits: `6b88cf9`, `b205742`
+- Summary: Increased the visual emphasis of the `build / support / grow` text.
+- Changed: Thickened the black letter outline from `.55px` to `1.1px` and slightly increased the responsive type size from `clamp(1.5rem, 3vw, 2.6rem)` to `clamp(1.7rem, 3.3vw, 2.9rem)`, while preserving the clay fill color.
+- Files changed: `index.html`, `CHANGES_LEDGER.md`
+- Deployment: Pushed the outline change in commit `6b88cf9` and the size refinement in commit `b205742` to `main`.
+- Verification: The live homepage returned HTTP `200`; checks confirmed the thicker outline, larger responsive lettering, clay fill, uploaded brand artwork, and continued absence of the footer review label.
+- Follow-up work or risks: None.
 
 ### v0.17.5-prism-black-outline - 2026-07-18
 
