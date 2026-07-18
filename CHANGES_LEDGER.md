@@ -30,11 +30,11 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 
 ### v0.15.1-hero-offers-pricing - 2026-07-18
 
-- Commit: pending at time of writing
+- Commit: `2c67507`
 - Summary: Replaced the hero snapshot panel with offers and estimated pricing.
 - Changed: Replaced the starter/pricing/built-by/support list with website, social media, brand label, business card, and pamphlet offer estimates.
 - Files changed: `index.html`, `CHANGES_LEDGER.md`
-- Deployment: Pending push to `main`.
+- Deployment: Pushed to `main`; live hero offers and estimated pricing panel verified.
 - Notes: Estimates are intentionally concise in the hero; detailed website pricing remains in the pricing section.
 
 ### v0.15.0-social-media-services - 2026-07-18
