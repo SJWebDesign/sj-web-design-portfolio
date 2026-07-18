@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.15.0-social-media-services`
+Current version: `v0.15.1-hero-offers-pricing`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,15 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.15.1-hero-offers-pricing - 2026-07-18
+
+- Commit: pending at time of writing
+- Summary: Replaced the hero snapshot panel with offers and estimated pricing.
+- Changed: Replaced the starter/pricing/built-by/support list with website, social media, brand label, business card, and pamphlet offer estimates.
+- Files changed: `index.html`, `CHANGES_LEDGER.md`
+- Deployment: Pending push to `main`.
+- Notes: Estimates are intentionally concise in the hero; detailed website pricing remains in the pricing section.
 
 ### v0.15.0-social-media-services - 2026-07-18
 
