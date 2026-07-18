@@ -30,11 +30,11 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 
 ### v0.16.4-monthly-partner-message - 2026-07-18
 
-- Commit: pending at time of writing
+- Commit: `22c6d67`
 - Summary: Added a professional monthly partner message in three spaced-out areas of the homepage.
 - Changed: Added `A real website partner, at one monthly price.` to the hero, pricing, and contact sections, with a reusable styled note treatment.
 - Files changed: `index.html`, `style.css`, `CHANGES_LEDGER.md`
-- Deployment: Pending push to `main`.
+- Deployment: Pushed to `main`; live homepage verified with the message appearing exactly three times and the partner note styling deployed.
 - Notes: Reworded the requested agent phrasing to fit the site's professional service positioning.
 
 ### v0.16.3-contact-email-update - 2026-07-18
