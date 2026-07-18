@@ -8,9 +8,21 @@ This is a responsive single-page portfolio designed for desktop browsers and iPh
 
 ## Brand colors
 
-- Sapphire blue: #0F52BA
-- Deep sapphire: #061F4A
-- Daffodil yellow: #F4D03F
+  --sapphire: #0f52ba;
+      --sapphire-bright: #2f73d8;
+      --navy: #071f45;
+      --daffodil: #f4d03f;
+      --daffodil-soft: #fff2a8;
+      --paper: #fffdf6;
+      --paper-deep: #f5ecdc;
+      --clay: #b86b52;
+      --sage: #78866b;
+      --ink: #14213d;
+      --muted: #58687a;
+      --line: rgba(7, 31, 69, .16);
+      --serif: "Cormorant Garamond", Georgia, serif;
+      --sans: "Manrope", "Segoe UI", sans-serif;
+      --shadow: 0 22px 60px rgba(7, 31, 69, .13);
 
 The palette is defined with CSS custom properties at the top of index.html.
 
