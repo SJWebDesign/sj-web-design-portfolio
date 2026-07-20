@@ -1,6 +1,6 @@
 # S&J Website Changes Ledger
 
-Current version: `v0.18.0-conversion-psychology`
+Current version: `v0.18.1-remove-jottful-comparison`
 Production domain: `https://sjwebdesignca.com/`
 Production branch: `main`
 Repository: `https://github.com/SJWebDesign/sj-web-design-portfolio`
@@ -27,6 +27,15 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 ```
 
 ## Version History
+
+### v0.18.1-remove-jottful-comparison - 2026-07-20
+
+- Summary: Removed the complete S&amp;J versus Jottful price-comparison section while preserving every other website section and interaction.
+- Changed: Removed the Jottful comparison table and its dated competitor-reference note. Kept all five S&amp;J pricing tiers, the generic first-year savings calculator, calls to action, FAQ, inquiry form, and the rest of the conversion-psychology work unchanged.
+- Files changed: `index.html`, `scripts/verify-conversion.cjs`, `CHANGES_LEDGER.md`
+- Deployment: Pending commit, push, merge, and live verification from `agent/remove-jottful-comparison`.
+- Verification: Automated Edge checks passed at `1440x900` and `390x844`. The updated verification explicitly confirmed that the comparison table and visible Jottful references are absent while the pricing plans, calculator, navigation, inquiry form, mobile CTA, reduced-motion behavior, and overflow safeguards still pass. `git diff --check` also passed.
+- Follow-up work or risks: None.
 
 ### v0.18.0-conversion-psychology - 2026-07-20
 
