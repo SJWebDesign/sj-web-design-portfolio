@@ -30,11 +30,12 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 
 ### v0.18.0-conversion-psychology - 2026-07-20
 
+- Commit: `44dde60` via pull request `#10`
 - Summary: Applied the conversion-psychology improvements from the Drive `Website Operations — Changes Ledger` without adding fabricated statistics, testimonials, outcomes, or blanket guarantees.
 - Changed: Rewrote the hero for three-second clarity with the audience, service, starting price, included updates, and direct support visible immediately. Added a verified-facts trust strip, primary and secondary hero actions, repeated contextual calls to action, a transparent first-year savings estimator, an objection-handling FAQ, founder commitments, a low-friction inquiry form, and a persistent mobile contact action. Qualified the 24-hour message around approvals and dependencies, and surfaced scope, hosting, ownership, cancellation, refund, response-time, and third-party-cost expectations before inquiry.
 - Files changed: `index.html`, `scripts/verify-conversion.cjs`, `CHANGES_LEDGER.md`
-- Deployment: Pending commit, push, and live verification from `agent/conversion-psychology`.
-- Verification: Automated Edge checks passed at `1440x900` and `390x844`, including one H1, required section anchors, verified-facts strip, ten FAQ answers, five-field inquiry form, savings arithmetic, mobile CTA visibility, mobile navigation state, zero page-level horizontal overflow, reduced-motion visibility, and zero browser runtime errors. `git diff --check` also passed.
+- Deployment: Merged to `main` through pull request `#10`. Cloudflare Workers build `e7c766fa-c7a8-419b-94f5-d554c142796d` completed successfully.
+- Verification: Automated Edge checks passed at `1440x900` and `390x844`, including one H1, required section anchors, verified-facts strip, ten FAQ answers, five-field inquiry form, savings arithmetic, mobile CTA visibility, mobile navigation state, zero page-level horizontal overflow, reduced-motion visibility, and zero browser runtime errors. `git diff --check` also passed. The production domain returned HTTP `200` and contained the new psychology-focused hero, trust strip, savings calculator, FAQ, inquiry form, and mobile CTA.
 - Follow-up work or risks: The inquiry form intentionally opens the visitor's email application because the static site has no form-processing service. The savings result is labeled as an estimate and requires visitors to compare scope and third-party costs.
 
 ### v0.17.14-code-native-brand-label - 2026-07-18
