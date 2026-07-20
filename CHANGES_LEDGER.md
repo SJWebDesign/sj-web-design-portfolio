@@ -30,11 +30,12 @@ Do not finish the task until CHANGES_LEDGER.md is current.
 
 ### v0.18.1-remove-jottful-comparison - 2026-07-20
 
+- Commit: `0c22b14` via pull request `#12`
 - Summary: Removed the complete S&amp;J versus Jottful price-comparison section while preserving every other website section and interaction.
 - Changed: Removed the Jottful comparison table and its dated competitor-reference note. Kept all five S&amp;J pricing tiers, the generic first-year savings calculator, calls to action, FAQ, inquiry form, and the rest of the conversion-psychology work unchanged.
 - Files changed: `index.html`, `scripts/verify-conversion.cjs`, `CHANGES_LEDGER.md`
-- Deployment: Pending commit, push, merge, and live verification from `agent/remove-jottful-comparison`.
-- Verification: Automated Edge checks passed at `1440x900` and `390x844`. The updated verification explicitly confirmed that the comparison table and visible Jottful references are absent while the pricing plans, calculator, navigation, inquiry form, mobile CTA, reduced-motion behavior, and overflow safeguards still pass. `git diff --check` also passed.
+- Deployment: Merged to `main` through pull request `#12`. Cloudflare Workers build `81ecf3c4-e24f-403d-b968-6dc1abe22752` completed successfully.
+- Verification: Automated Edge checks passed at `1440x900` and `390x844`. The updated verification explicitly confirmed that the comparison table and visible Jottful references are absent while the pricing plans, calculator, navigation, inquiry form, mobile CTA, reduced-motion behavior, and overflow safeguards still pass. `git diff --check` also passed. The production domain returned the updated HTML with no visible Jottful reference or comparison table and with S&amp;J pricing and the generic savings calculator still present.
 - Follow-up work or risks: None.
 
 ### v0.18.0-conversion-psychology - 2026-07-20
