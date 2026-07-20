@@ -28,6 +28,8 @@ const assert = (condition, message) => {
   }
 
   assert(await page.locator('.trust-point').count() === 4, 'Verified-facts trust strip is incomplete');
+  assert(await page.locator('.comparison-wrap, .comparison-table').count() === 0, 'Competitor comparison section must remain removed');
+  assert(!(await page.locator('body').innerText()).includes('Jottful'), 'Jottful must not appear in visible page content');
   assert(await page.locator('#contact-form input, #contact-form textarea').count() === 5, 'Inquiry form must contain only five fields');
   assert(await page.locator('#faq details').count() === 10, 'FAQ objection coverage is incomplete');
   assert(await page.locator('.mobile-cta').evaluate(element => getComputedStyle(element).display) === 'none', 'Mobile CTA must be hidden on desktop');
